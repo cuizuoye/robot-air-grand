@@ -1,0 +1,16 @@
+{
+  "purpose": "Offline process/configuration fixture only; not a live PID binding or capture authorization",
+  "pid": 105215,
+  "start_ticks": "2304383",
+  "exe": "/home/czy/vicon_receiver_ws/build/vicon_receiver/vicon_client",
+  "argv": [
+    "/home/czy/vicon_receiver_ws/install/vicon_receiver/lib/vicon_receiver/vicon_client",
+    "--ros-args",
+    "--params-file",
+    "/tmp/launch_params_nu20b_u4"
+  ],
+  "ros_domain": "0",
+  "config_source": "/tmp/launch_params_nu20b_u4",
+  "config_fixture": "vicon_launch_params_20261021.yaml",
+  "config_sha256": "ceb4e6db45eec584e146c718d8737d79722c2de3f7290dc9bf8810ee6d5989f9"
+}

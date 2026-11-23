@@ -1,0 +1,10 @@
+{
+  "scope": "Representative OS mapping metadata from an ALREADY RUNNING shared receiver; not Vicon frame acquisition",
+  "source": "/proc/75061/maps",
+  "captured_utc": "2026-10-21T06:49:51.847407+00:00",
+  "sha256": "e73c58c0f409500f1fa9cf7fbabca3e6ee0963d9300e3edf7897f8779a011440",
+  "selected_lines": 13,
+  "total_source_lines": 588,
+  "failed_attempt_snapshot": false,
+  "note": "The failed child raw maps were not saved. This is a later representative metadata sample, NOT a reconstruction of that child. No SDK connection or ROS node was started."
+}

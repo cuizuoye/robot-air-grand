@@ -1,0 +1,26 @@
+{
+  "scope": "OFFLINE EXAMPLE ONLY. Ground/limits/yaw are NOT approved flight settings.",
+  "approved_for_flight": false,
+  "mode": "CAR_FOLLOW_ABOVE",
+  "initial_xy": [0.6100524785613411, -1.0545078135837964],
+  "ground_z_map_m": 0.0,
+  "height_m": 2.0,
+  "yaw_map_rad": 0.0,
+  "frame_id": "map",
+  "self_source": "MircoAir",
+  "wand_source": "wand01_NOT_YET_CONFIRMED",
+  "car_source": "car01",
+  "offset_xy": [0.3, 0.2],
+  "period_ns": 20000000,
+  "limits": {
+    "xmin": -2.0,
+    "xmax": 2.0,
+    "ymin": -2.0,
+    "ymax": 2.0,
+    "speed_mps": 0.4,
+    "acceleration_mps2": 0.3,
+    "target_age_s": 0.2,
+    "loss_timeout_s": 1.0,
+    "max_step_s": 0.1
+  }
+}

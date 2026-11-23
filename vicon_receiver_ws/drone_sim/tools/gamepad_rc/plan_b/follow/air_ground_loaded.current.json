@@ -1,0 +1,450 @@
+{
+  "schema": "air_ground_sequence_v1",
+  "geometry_is_example": false,
+  "live_inputs": {
+    "measured": true,
+    "world_revision": "Vicon-world-observed-20261112-not-surveyed",
+    "car_rigid_revision": "car01-rebuilt-20261112-static-alignment-01",
+    "uav_rigid_revision": "MircoAir-rebuilt-20261030-revision01",
+    "car_body_origin_in_rigid_m": [
+      -0.00026656850502055913,
+      0.014996854238623875,
+      -0.00015265705879599544
+    ],
+    "car_body_orientation_in_rigid_xyzw": [
+      -0.004703387621249002,
+      0.0024734874076764606,
+      0.7133579036458927,
+      0.7007797523550932
+    ],
+    "car_ground_z_map_m": 0.09211351215833447,
+    "car_ground_plane_map_abc": [
+      -0.023835413780413223,
+      0.007386941734231541,
+      0.11632328267194962
+    ],
+    "measurement_quality": "recorded Vicon coordinates plus approximate operator platform dimensions; not surveyed"
+  },
+  "note": "反光点恢复原位且car01未改，复用固定起点、车头映射和3x2m路线，用户接受进入协同阶段、不重跑矩形。平台几何已按用户约12x12cm支撑、板面高5cm补齐；边距1cm、落点水平容差3cm。配置完整不代表缓降或联合飞行已实测，下一项是静止联合接入。",
+  "frame_id": "map",
+  "frame_revision": "Vicon-world-observed-20261112-car01-rebuilt-01",
+  "car_source": "car01",
+  "uav_source": "MircoAir",
+  "landing_heading": "initial_relative_car",
+  "platform_offset_car_m": [
+    0.02003587274014913,
+    -0.03356611588755411,
+    -0.007864544052069752
+  ],
+  "platform_size_m": [
+    0.23,
+    0.23
+  ],
+  "uav_landing_footprint_m": [
+    0.12,
+    0.12
+  ],
+  "edge_margin_m": 0.01,
+  "clearance_m": 0.3,
+  "route_world_xyyaw": [
+    [
+      0.46598770865026456,
+      1.9511287393036327,
+      1.6361869967853016
+    ],
+    [
+      -1.5297378750491668,
+      1.8204405815862534,
+      1.6361869967853016
+    ],
+    [
+      -1.333705638473098,
+      -1.1731477939628938,
+      1.6361869967853016
+    ],
+    [
+      0.6620199452263335,
+      -1.0424596362455145,
+      1.6361869967853016
+    ]
+  ],
+  "car_speed_mps": 0.2,
+  "car_acceleration_mps2": 0.1,
+  "car_arrival_m": 0.08,
+  "car_yaw_tolerance_rad": 0.17,
+  "stopped_speed_mps": 0.05,
+  "stopped_yaw_rate_rps": 0.08,
+  "settle_seconds": 0.6,
+  "climb_speed_mps": 0.15,
+  "descent_speed_mps": 0.05,
+  "yaw_rate_rps": 0.3,
+  "vertical_tolerance_m": 0.05,
+  "landing_xy_tolerance_m": 0.03,
+  "landing_yaw_tolerance_rad": 0.08,
+  "land_handoff_height_m": 0.0,
+  "follow_limits": {
+    "xmin": -2.029737875049167,
+    "xmax": 1.1942050976891045,
+    "ymin": -1.6731477939628938,
+    "ymax": 2.4733151381367997,
+    "speed_mps": 0.4,
+    "acceleration_mps2": 0.2,
+    "target_age_s": 1.0,
+    "loss_timeout_s": 2.0,
+    "max_step_s": 1.0
+  },
+  "car_entry": "/home/czy/vicon_mecanum_ws/candidates/wand_4wse_pose2000_20261105/entry.py",
+  "uav_entry": "/home/czy/vicon_receiver_ws/drone_sim/tools/gamepad_rc/vicon_fixed_point_entry.py",
+  "takeoff_car_world_xyyaw": [
+    0.6620199452263335,
+    -1.0424596362455145,
+    1.6361869967853016
+  ],
+  "flight_status_timeout_s": 3.0,
+  "maximum_task_seconds": 600,
+  "site_evidence": {
+    "layout_evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car01_rebuilt_layout_20261112_104024/layout_candidate.json",
+    "source_coordinates": "/home/czy/vicon_receiver_ws/drone_sim/tools/gamepad_rc/plan_b/follow/car01_sources.current.json",
+    "platform_surface_height_above_floor_estimate_m": 0.07,
+    "heading_candidate_assumption": "实体前向来自断动力人工前移，仅修正平面航向、保留原竖直轴；1m动力往返已通过，用户接受轻微斜行。反光点已恢复原位且Tracker刚体未改，复用当前映射。",
+    "captured_landing_reference_in_car_rigid_m": [
+      0.03280133481349713,
+      0.03605256544700508,
+      0.04187932809302084
+    ],
+    "reference_definition": "car_ground_z_map_m 是上述已定义运动参考点在本次静止记录中的 Vicon map Z。不是平台离地高度或物理几何中心高度；只在原控制适配器内部换算，不移动共同世界坐标。",
+    "car_origin_user_confirmation": "2026-11-12：用户估计 car01 刚体原点位于底盘几何中心后方约 1.5 cm，左右偏移可忽略。故从刚体原点到几何中心的水平偏移为沿车头方向 +0.015 m；竖直偏移尚未提供。",
+    "car_origin_partial_estimate": {
+      "origin": "car01 rigid origin",
+      "target": "chassis geometric center",
+      "axes": "car body forward-left-up",
+      "translation_in_body_m": [
+        0.015,
+        0.0,
+        null
+      ],
+      "horizontal_contribution_in_rigid_m": [
+        -0.001692141,
+        0.01490343,
+        -0.000156336
+      ],
+      "body_up_axis_in_rigid": [
+        -0.003243658,
+        0.010121041,
+        0.99994352
+      ],
+      "full_offset_relation": "car_body_origin_in_rigid_m = horizontal_contribution_in_rigid_m + h * body_up_axis_in_rigid; h is the unknown vertical offset in metres",
+      "status": "historical_estimate_superseded_by_defined_motion_reference",
+      "note": "保留用户原始水平估计；物理几何中心竖直位置未测。现采用另列的同高运动参考点定义，不再将物理高度作为待测项。"
+    },
+    "car_motion_reference_definition": {
+      "source": "user horizontal estimate plus explicitly defined reference height",
+      "translation_in_body_m": [
+        0.015,
+        0.0,
+        0.0
+      ],
+      "target": "virtual chassis motion reference, 15 mm forward of car01 origin at the same body-frame height",
+      "not_measured_physical_geometric_center_z": true,
+      "applied_to_live_inputs": true,
+      "original_wand_profile_modified": false
+    },
+    "takeoff_capture": {
+      "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_rectangle_configuration_20261112_141439/sdk_snapshot.json",
+      "sha256": "4f7e841d67133767f503c8a46d8d3d2734d4eaa8767931efb8d0c8e42706adea",
+      "samples": 200,
+      "duration_s": 0.606177269,
+      "invalid_frames_skipped": 1,
+      "current_point_observed": true,
+      "controls_sent": 0,
+      "origin_and_heading_reused": false,
+      "car_position_range_mm": [
+        0.2898484413964564,
+        0.16249956546632305,
+        0.623338665302578
+      ],
+      "heading_recomputed_from_saved_raw": true,
+      "reuse_definition": "same raw physical takeoff pose; control-reference origin and yaw recomputed with corrected body mapping; no recapture or new physical anchor"
+    },
+    "saved_landing_reference_in_defined_car_body_m": [
+      0.02003587274014913,
+      -0.03356611588755411,
+      0.04213545594793025
+    ],
+    "saved_landing_reference_definition": "复用此前正确摆放时无人机机体参考点相对当前定义车体参考的坐标；不是平台表面，也不替代底部支撑落脚范围。",
+    "route_design": {
+      "shape": "3 m forward x 2 m left closed rectangle",
+      "frame": "forward-left coordinates anchored once at the captured takeoff pose",
+      "local_forward_left_waypoints_m": [
+        [
+          3.0,
+          0.0
+        ],
+        [
+          3.0,
+          2.0
+        ],
+        [
+          0.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "heading_policy": "constant physical car heading recomputed from saved takeoff raw pose and manual-forward calibration; no chassis turn at corners",
+      "start_and_finish_same_world_pose": true,
+      "reanchor_on_future_start": false,
+      "path_length_m": 10.0,
+      "car_speed_mps": 0.2,
+      "ideal_cruise_seconds": 50.0,
+      "uav_follow_speed_limit_mps": 0.4,
+      "motion_envelope_world_xy_m": {
+        "xmin": -1.5297378750491668,
+        "xmax": 0.6620199452263335,
+        "ymin": -1.1731477939628938,
+        "ymax": 1.9511287393036327
+      },
+      "physical_clearance_and_vicon_coverage_confirmed": true,
+      "note": "路线包络只代表车体参考点的路径；完整任务区域须覆盖无人机相对偏移、跟随偏差与机体外缘，不能把路径边界当净空边界。",
+      "user_site_confirmation": {
+        "date": "2026-11-12T16:11:18.265288+08:00",
+        "statement": "执行完整矩形",
+        "scope": "corrected fixed start approach and complete forward3m-left2m-back3m-right2m rectangle; car outer clearance; personnel outside route; UAV remains off car",
+        "source": "user confirmation in this chat",
+        "new_capture_required": false
+      },
+      "task_area_definition": {
+        "method": "axis-aligned bounds of fixed car route plus saved nominal UAV follow offset, expanded for reference braking",
+        "bounds_world_xy_m": {
+          "xmin": -2.029737875049167,
+          "xmax": 1.1942050976891045,
+          "ymin": -1.6731477939628938,
+          "ymax": 2.4733151381367997
+        },
+        "reference_braking_distance_m": 0.4000000000000001,
+        "additional_numeric_margin_m": 0.1,
+        "padding_m": 0.5000000000000001,
+        "physical_outer_boundary_surveyed": false,
+        "note": "既有跟随器的软件工作范围；不是障碍物地图，也不宣称边界内每个角落均已测量净空。无需移动或重新采集车机。"
+      },
+      "latest_user_change": {
+        "date": "2026-11-12",
+        "statement": "后续向左运动范围可能有点太大了，接近边缘了，下次修改为2m",
+        "interpretation": "only lateral width reduced to 2m; forward/backward remain 3m",
+        "after_run": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_rectangle_live_20261112_151550_run02",
+        "hardware_run_of_shortened_route": true
+      },
+      "heading_calibration": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_heading_20261112_154940/heading_candidate.json",
+      "latest_heading_correction": {
+        "date": "2026-11-12",
+        "body_plane_yaw_correction_deg": -5.459047645034102,
+        "hardware_run_of_corrected_route": true
+      },
+      "heading_correction_clearance_note": "Corrected full route clearance was confirmed for the 16:11 car-only run; unchanged path is retained, rectangle repeat waived. Combined airborne/body clearance remains scoped to the future joint operation.",
+      "short_straight_validation": {
+        "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_short_straight_live_20261112_160435/analysis.json",
+        "physical_trial": "car only, 1m forward and return",
+        "complete": true,
+        "final_distance_to_fixed_origin_m": 0.027565161356621154,
+        "arrival_tolerance_m": 0.08,
+        "stop_confirmed": true,
+        "final_zero_wheel_samples": 7,
+        "user_acceptance": "现在有略微的斜行，我认为后续可以不用管这个问题了，只要能够稳定到达终点即可",
+        "precision_tuning_paused": true,
+        "full_rectangle_validated": false
+      },
+      "latest_corrected_rectangle_trial": {
+        "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_rectangle_corrected_live_20261112_161118/analysis.json",
+        "completed_edges": 2,
+        "stopped_on_edge": 3,
+        "backward_progress_before_fault_m": 0.930301143878099,
+        "complete": false,
+        "stop_confirmed": true,
+        "reason": "single received roll flip to -177deg; next logged sample recovered; user reports no contact/lifting",
+        "transient_source_not_localized_between_tracker_and_host": true,
+        "controls_retuned": false,
+        "retry_started": false,
+        "user_followup": "User found loose car markers, restored original positions without changing Tracker rigid body, and waived another rectangle."
+      },
+      "progression_decision": {
+        "recorded_at": "2026-11-12T16:23:17.819600+08:00",
+        "source": "user statement in this chat",
+        "statement": "默认这一项矩形运动完成即可，接着推进后续空地协同任务即可",
+        "accepted_for_cooperative_development": true,
+        "rectangle_repeat_waived": true,
+        "complete_rectangle_physically_observed": false,
+        "reason": "User found loose/moved car markers and confirms restoration to original positions with unchanged rigid body.",
+        "suspected_cause": "loose car markers; user observation consistent with recorded orientation flip, not independently proven",
+        "additional_pose_filter_development": false,
+        "precision_tuning_paused": true,
+        "next_step": "joint stationary integration; no automatic motion"
+      }
+    },
+    "task_tolerance_policy": {
+      "reason": "user requested fewer jitter-induced interruptions; relax task tolerances and discard stale status while preserving original timestamps",
+      "changed": {
+        "car_arrival_m": {
+          "before": 0.025,
+          "after": 0.08
+        },
+        "car_yaw_tolerance_rad": {
+          "before": 0.08,
+          "after": 0.17
+        },
+        "stopped_speed_mps": {
+          "before": 0.03,
+          "after": 0.05
+        },
+        "stopped_yaw_rate_rps": {
+          "before": 0.05,
+          "after": 0.08
+        },
+        "settle_seconds": {
+          "before": 1.0,
+          "after": 0.6
+        },
+        "follow_limits.target_age_s": {
+          "before": 0.5,
+          "after": 1.0
+        },
+        "follow_limits.loss_timeout_s": {
+          "before": 1.0,
+          "after": 2.0
+        },
+        "follow_limits.max_step_s": {
+          "before": 0.4,
+          "after": 1.0
+        }
+      },
+      "unchanged": [
+        "physical ESTOP/operator STOP",
+        "transport signed-command timeout 0.1 s",
+        "car feedback timeout 0.5 s",
+        "MCU command watchdog 600 ms",
+        "car pose freshness 2 s",
+        "PX4 landed and disarmed confirmation",
+        "platform footprint containment"
+      ],
+      "scope": "current car/cooperative plan only; legacy wand runtime and successful independent drone flight profiles unchanged",
+      "future_design": "Prefer current valid data and explicit operator starts; do not add shorter task-level timeouts duplicating underlying freshness checks. Never restamp cached input to prolong freshness."
+    },
+    "ground_height_model": {
+      "definition": "expected car reference Z = a*map_x + b*map_y + c; only private car-control Z is normalized",
+      "abc": [
+        -0.023835413780413223,
+        0.007386941734231541,
+        0.11632328267194962
+      ],
+      "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_rectangle_live_20261112_144911_retry01/car_motion.jsonl",
+      "source_sha256": "f2293f9c45b32e833b346e6dc4763fa65ab111d59a38a265e9c13ca72b9fa576",
+      "world_revision": "Vicon-world-observed-20261112-not-surveyed",
+      "car_rigid_revision": "car01-rebuilt-20261112-static-alignment-01",
+      "user_confirmation": "No physical lifting, wheel lift or collision during this ground run",
+      "observed_route_scope": "first 3m edge and about 2m of the second edge only; remaining area extrapolated",
+      "fit": {
+        "z_equals_ax_plus_by_plus_c": [
+          -0.023835413780413223,
+          0.007386941734231541,
+          0.11632328267194962
+        ],
+        "rms_residual_m": 0.0009129640180481258,
+        "max_residual_m": 0.002342309271937265,
+        "slope_deg": 1.4294527472679392
+      },
+      "full_area_survey": false,
+      "physical_validated_after_correction": false,
+      "shared_vicon_coordinates_changed": false,
+      "uav_world_pose_changed": false,
+      "automatic_online_refit": false,
+      "residual_lift_threshold_m": 0.08,
+      "subsequent_run": {
+        "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_rectangle_live_20261112_151550_run02",
+        "first_forward_leg_completed": true,
+        "previous_false_stop_position_passed": true,
+        "end_reason": "operator manually lifted car; tilt stop confirmed",
+        "complete_rectangle_validated": false
+      }
+    },
+    "heading_calibration": {
+      "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_heading_20261112_154940/heading_candidate.json",
+      "analysis": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_heading_20261112_154940/analysis.json",
+      "method": "measured physical forward projected onto existing car body plane; body up unchanged",
+      "original_orientation_in_rigid_xyzw": [
+        -0.004580261141658394,
+        0.002694661935357851,
+        0.7459205218938423,
+        0.6660137648896955
+      ],
+      "body_plane_yaw_correction_rad": -0.09527835542908775,
+      "body_plane_yaw_correction_deg": -5.459047645034102,
+      "applied_rigid_forward_yaw_deg": 91.01832303139372,
+      "observed_endpoint_rotation_change_deg": 2.2153430601494177,
+      "raw_takeoff_snapshot_reused": true,
+      "physical_rigid_body_unchanged": true,
+      "reference_xy_coordinate_shift_m": [
+        0.001419372457663215,
+        0.00016030049567583582
+      ],
+      "reference_z_coordinate_shift_m": 2.5394497154690443e-05,
+      "powered_motion_validated": true,
+      "original_wand_entry_modified": false,
+      "limitation": "Manual alignment and 2.22 degree endpoint rotation limit angular precision. A single powered 1m forward-return trial passed the existing 8cm arrival tolerance; the complete corrected rectangle is not yet validated.",
+      "powered_motion_validation_scope": "Single 1m forward-return car-only run; full rectangle and cooperative flight not validated",
+      "powered_motion_evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_short_straight_live_20261112_160435/analysis.json"
+    },
+    "marker_restoration_user_confirmation": {
+      "recorded_at": "2026-11-12T16:23:17.819600+08:00",
+      "source": "user statement in this chat",
+      "statement": "已恢复原位，刚体未改",
+      "car_subject": "car01",
+      "markers_restored_to_calibrated_positions": true,
+      "tracker_rigid_unchanged": true,
+      "body_mapping_reused": true,
+      "fixed_takeoff_reused": true,
+      "landing_reference_reused": true,
+      "repeat_heading_capture_required": false,
+      "repeat_rectangle_requested": false,
+      "new_physical_verification_performed": false
+    },
+    "platform_geometry": {
+      "date": "2026-11-12T16:30:03.762819+08:00",
+      "source": "operator estimate in this chat",
+      "original_answer": "无人机放稳在平台时，飞控板上表面高出平台约5cm；支撑部件，其最前到最后、最左到最右的跨度约为12cm",
+      "support_footprint_m": [
+        0.12,
+        0.12
+      ],
+      "board_upper_surface_above_platform_m": 0.05,
+      "platform_size_m": [
+        0.23,
+        0.23
+      ],
+      "measurement_quality": "approximate operator dimensions; uncertainty not quantified",
+      "board_reference_definition": "flight_controller_board_geometric_center_on_upper_surface_plane",
+      "board_reference_evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/rigid_layout_20261030_revision01/origin_measurement/board_center_candidate.json",
+      "placement_basis": "saved centered resting placement; car markers restored and rigid unchanged per user",
+      "support_center_assumption": "12x12cm contact envelope centered on the board reference projection, consistent with reported centered placement; independent contact asymmetry not measured",
+      "platform_offset_formula": "saved landing board reference in defined car body minus [0,0,0.05] m",
+      "platform_offset_car_m": [
+        0.02003587274014913,
+        -0.03356611588755411,
+        -0.007864544052069752
+      ],
+      "platform_floor_height_used": false,
+      "edge_margin_m": 0.01,
+      "landing_xy_tolerance_m": 0.03,
+      "nominal_aligned_edge_room_m": 0.055,
+      "nominal_aligned_edge_room_after_margin_m": 0.045,
+      "saved_relative_yaw_rad": 0.09527837181455083,
+      "yaw_tolerance_rad": 0.08,
+      "conservative_rotated_edge_room_after_margin_m": 0.03545638290531932,
+      "landing_error_norm_tolerance_fits_nominal_rotated_room": true,
+      "physical_precision_proven": false,
+      "flight_authorized": false,
+      "hardware_opened": false,
+      "note": "Landing height target remains the actual captured seated UAV body height, not platform surface. Approximate geometry is for initial integration; it does not prove 3cm landing accuracy."
+    }
+  }
+}

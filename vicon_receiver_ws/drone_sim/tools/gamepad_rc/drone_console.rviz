@@ -1,0 +1,58 @@
+Panels: []
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Enabled: true
+      Name: Grid - 0.5 m per cell
+      Cell Size: 0.5
+      Plane Cell Count: 24
+      Color: 105; 125; 145
+      Alpha: 0.22
+      Plane: XY
+      Reference Frame: drone_display
+      Line Style:
+        Value: Lines
+        Line Width: 0.01
+    - Class: rviz_default_plugins/Axes
+      Enabled: true
+      Name: World XYZ
+      Reference Frame: drone_display
+      Length: 0.4
+      Radius: 0.012
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: Air Ground Scene
+      Namespaces: {}
+      Topic:
+        Value: /drone_console/markers
+        Depth: 1
+        Durability Policy: Volatile
+        Reliability Policy: Reliable
+  Global Options:
+    Background Color: 25; 34; 45
+    Fixed Frame: drone_display
+    Frame Rate: 20
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/FocusCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 5.5
+      Pitch: 0.55
+      Yaw: 0.8
+      Near Clip Distance: 0.01
+      Focal Point:
+        X: 0
+        Y: 0.6
+        Z: 0.1
+      Target Frame: drone_display
+  Value: true
+Window Geometry:
+  Height: 1100
+  Width: 1600
+  X: 100
+  Y: 100
+  Hide Left Dock: true
+  Hide Right Dock: true

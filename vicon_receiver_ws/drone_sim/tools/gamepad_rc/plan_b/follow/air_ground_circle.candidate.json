@@ -1,0 +1,327 @@
+{
+  "schema": "air_ground_sequence_v1",
+  "geometry_is_example": false,
+  "live_inputs": {
+    "measured": true,
+    "world_revision": "Vicon-world-observed-20261112-not-surveyed",
+    "car_rigid_revision": "car01-observed-20261120-geometry-rebased",
+    "uav_rigid_revision": "MircoAir-observed-20261120-geometry-rebased",
+    "car_body_origin_in_rigid_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "car_body_orientation_in_rigid_xyzw": [
+      -0.002370305461977678,
+      -0.004331621241122532,
+      -0.9999859602095429,
+      0.0019230427033577588
+    ],
+    "car_ground_z_map_m": 0.10060620627599906,
+    "car_ground_plane_map_abc": [
+      -0.023835413780413223,
+      0.007386941734231541,
+      0.11901138220993841
+    ],
+    "measurement_quality": "2026-11-20 geometric frame transfer, same-frame original SDK data and operator-confirmed left/parallel placement. Approximate body mounting; car origin remains virtual rigid centroid, not surveyed chassis center.",
+    "car_reference_definition": "Virtual point at car01 rigid origin; physical-forward axes inherited through recorded 2026-11-20 frame transfer."
+  },
+  "note": "2026-11-23 圆周跟随离线候选：复用自动绕行就位、0.5m起飞、车上方跟随、返回本轮起飞点与连续缓降；车头固定，圆心在本轮小车起点左侧0.75m，向前进入直径1.5m逆时针一圈。小车0.25m/s，圆周中间点连续通过，闭环终点停车。方向按本轮实测机头冻结，保留矩形场地区域，不自动扩大边界；未实飞。",
+  "frame_id": "map",
+  "frame_revision": "Vicon-world-observed-20261112-car01-reference-updated-20261118",
+  "car_source": "car01",
+  "uav_source": "MircoAir",
+  "landing_heading": "initial_world",
+  "clearance_m": 0.5,
+  "car_speed_mps": 0.25,
+  "car_acceleration_mps2": 0.1,
+  "car_arrival_m": 0.08,
+  "car_yaw_tolerance_rad": 0.17,
+  "stopped_speed_mps": 0.05,
+  "stopped_yaw_rate_rps": 0.08,
+  "settle_seconds": 0.6,
+  "climb_speed_mps": 0.15,
+  "descent_speed_mps": 0.08,
+  "yaw_rate_rps": 0.3,
+  "vertical_tolerance_m": 0.05,
+  "landing_xy_tolerance_m": 0.2,
+  "landing_yaw_tolerance_rad": 0.2,
+  "land_handoff_height_m": 0.0,
+  "follow_limits": {
+    "xmin": -2.6695693066651396,
+    "xmax": 1.3962577328252495,
+    "ymin": -1.6731477939628938,
+    "ymax": 2.6416881225686315,
+    "speed_mps": 0.4,
+    "acceleration_mps2": 0.2,
+    "target_age_s": 1.0,
+    "loss_timeout_s": 2.0,
+    "max_step_s": 1.0
+  },
+  "car_entry": "/home/czy/vicon_mecanum_ws/candidates/wand_4wse_pose2000_20261105/entry.py",
+  "uav_entry": "/home/czy/vicon_receiver_ws/drone_sim/tools/gamepad_rc/vicon_fixed_point_entry.py",
+  "flight_status_timeout_s": 3.0,
+  "maximum_task_seconds": 600,
+  "landing_mode": "initial_ground",
+  "start_alignment": {
+    "mode": "stationary_uav",
+    "uav_rigid_offset_car_forward_left_m": [
+      0.0,
+      -0.51
+    ],
+    "avoidance": {
+      "car_size_m": [
+        0.18,
+        0.16
+      ],
+      "uav_size_m": [
+        0.17,
+        0.17
+      ],
+      "car_reference_margin_m": 0.05,
+      "uav_reference_margin_m": 0.03,
+      "path_margin_m": 0.15,
+      "geometry_source": "2026-11-23 operator dimensions; rounded UAV corners bounded by full rectangle",
+      "reference_margin_status": "Conservative allowances about calibrated body references; car centroid-to-chassis offset to confirm before first all-sides live test",
+      "physical_validated": false
+    }
+  },
+  "route_local_forward_left_m": [
+    [
+      0.09789464416503868,
+      0.006416353969642213
+    ],
+    [
+      0.19411428382689055,
+      0.025555630283198766
+    ],
+    [
+      0.2870125742738173,
+      0.057090350616534946
+    ],
+    [
+      0.37499999999999994,
+      0.10048094716167097
+    ],
+    [
+      0.4565710717565405,
+      0.15498499478157363
+    ],
+    [
+      0.5303300858899106,
+      0.21966991411008932
+    ],
+    [
+      0.5950150052184264,
+      0.2934289282434595
+    ],
+    [
+      0.649519052838329,
+      0.3749999999999999
+    ],
+    [
+      0.692909649383465,
+      0.4629874257261826
+    ],
+    [
+      0.7244443697168013,
+      0.5558857161731094
+    ],
+    [
+      0.7435836460303578,
+      0.6521053558349612
+    ],
+    [
+      0.75,
+      0.7499999999999999
+    ],
+    [
+      0.7435836460303578,
+      0.8478946441650387
+    ],
+    [
+      0.7244443697168013,
+      0.9441142838268906
+    ],
+    [
+      0.6929096493834651,
+      1.0370125742738172
+    ],
+    [
+      0.649519052838329,
+      1.1249999999999998
+    ],
+    [
+      0.5950150052184264,
+      1.2065710717565405
+    ],
+    [
+      0.5303300858899107,
+      1.2803300858899105
+    ],
+    [
+      0.45657107175654066,
+      1.3450150052184262
+    ],
+    [
+      0.37499999999999994,
+      1.399519052838329
+    ],
+    [
+      0.28701257427381743,
+      1.442909649383465
+    ],
+    [
+      0.19411428382689078,
+      1.4744443697168013
+    ],
+    [
+      0.09789464416503899,
+      1.4935836460303578
+    ],
+    [
+      9.184850993605148e-17,
+      1.5
+    ],
+    [
+      -0.09789464416503882,
+      1.4935836460303578
+    ],
+    [
+      -0.1941142838268906,
+      1.4744443697168013
+    ],
+    [
+      -0.28701257427381727,
+      1.4429096493834652
+    ],
+    [
+      -0.3749999999999998,
+      1.399519052838329
+    ],
+    [
+      -0.4565710717565405,
+      1.3450150052184264
+    ],
+    [
+      -0.5303300858899104,
+      1.280330085889911
+    ],
+    [
+      -0.5950150052184262,
+      1.2065710717565405
+    ],
+    [
+      -0.6495190528383288,
+      1.1250000000000004
+    ],
+    [
+      -0.6929096493834651,
+      1.0370125742738172
+    ],
+    [
+      -0.7244443697168013,
+      0.9441142838268906
+    ],
+    [
+      -0.7435836460303578,
+      0.8478946441650387
+    ],
+    [
+      -0.75,
+      0.7500000000000002
+    ],
+    [
+      -0.7435836460303579,
+      0.6521053558349615
+    ],
+    [
+      -0.7244443697168013,
+      0.5558857161731098
+    ],
+    [
+      -0.6929096493834652,
+      0.4629874257261831
+    ],
+    [
+      -0.649519052838329,
+      0.3749999999999999
+    ],
+    [
+      -0.5950150052184268,
+      0.2934289282434601
+    ],
+    [
+      -0.5303300858899107,
+      0.2196699141100895
+    ],
+    [
+      -0.45657107175654066,
+      0.1549849947815738
+    ],
+    [
+      -0.37500000000000033,
+      0.10048094716167122
+    ],
+    [
+      -0.28701257427381716,
+      0.05709035061653486
+    ],
+    [
+      -0.19411428382689117,
+      0.025555630283198932
+    ],
+    [
+      -0.09789464416503876,
+      0.006416353969642213
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "site_evidence": {
+    "scope": "Circle offline candidate; inherited estimator, extrinsics, side spacing and landing configuration. No new live clearance or trajectory evidence.",
+    "baseline_plan": "air_ground_rectangle.candidate.json",
+    "current_alignment_spacing": {
+      "source": "/data/home-migration-20261118/vicon_receiver_ws/drone_sim/preparation_runs/car_realign_20261120_162135/alignment_analysis.json",
+      "configured_lateral_m": 0.51,
+      "measured_lateral_m": 0.49659612340815906,
+      "longitudinal_residual_m": 0.010900677298858887,
+      "heading_difference_deg": -0.3054093745217081,
+      "operator_accepted": true,
+      "scope": "Car-only realignment and final placement accepted; shortened-spacing airborne rendezvous/return not yet tested",
+      "target_policy": "Keep nominal 0.51m target; do not accumulate observed stop error"
+    },
+    "circle_revision": {
+      "physical_validated": false,
+      "flight_authorized": false,
+      "diameter_m": 1.5,
+      "car_speed_mps": 0.25,
+      "world_bounds_inherited": true,
+      "landing": "original session UAV takeoff point on ground beside car"
+    }
+  },
+  "follow_position": "above_car",
+  "airborne_offset_car_forward_left_m": [
+    0.0,
+    0.0
+  ],
+  "follow_arrival_tolerance_m": 0.3,
+  "follow_velocity_feedforward": true,
+  "landing_horizontal_speed_mps": 0.08,
+  "controller_velocity_feedforward": true,
+  "landing_position_feedback_gain_s_inv": 0.5,
+  "landing_integral_gain_s_inv2": 0.05,
+  "landing_velocity_damping": 0.4,
+  "landing_settling_speed_mps": 0.2,
+  "landing_settle_seconds": 0.6,
+  "ground_descent_continuous": true,
+  "circle_route": {
+    "diameter_m": 1.5,
+    "segments": 48,
+    "direction": "counterclockwise",
+    "heading": "fixed",
+    "lookahead_m": 0.2
+  }
+}

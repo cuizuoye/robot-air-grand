@@ -1,0 +1,91 @@
+{
+  "schema": "air_ground_sources_v1",
+  "scope": "Read-only coordinate mapping; not a route or executable flight plan",
+  "car_entry": "/home/czy/vicon_mecanum_ws/candidates/wand_4wse_pose2000_20261105/entry.py",
+  "car_source": "car01",
+  "uav_source": "MircoAir",
+  "frame_id": "map",
+  "frame_revision": "Vicon-world-observed-20261112-car01-rebuilt-01",
+  "live_inputs": {
+    "measured": false,
+    "world_revision": "Vicon-world-observed-20261112-not-surveyed",
+    "car_rigid_revision": "car01-rebuilt-20261112-static-alignment-01",
+    "uav_rigid_revision": "MircoAir-rebuilt-20261030-revision01",
+    "car_body_origin_in_rigid_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "car_body_orientation_in_rigid_xyzw": [
+      -0.004703387621249002,
+      0.0024734874076764606,
+      0.7133579036458927,
+      0.7007797523550932
+    ]
+  },
+  "reference_definition": "car position remains the NEW rigid origin for read-only observation, NOT a measured chassis control center. Orientation uses the manual-forward yaw correction with previous body-up axis preserved. Do not use as a motion plan.",
+  "layout_evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car01_rebuilt_layout_20261112_104024/layout_candidate.json",
+  "geometry_estimates": {
+    "platform_size_m": [
+      0.23,
+      0.23
+    ],
+    "platform_surface_height_m": 0.07,
+    "height_reference": "physical floor, not Vicon world Z",
+    "uav_landing_footprint_m": [
+      0.12,
+      0.12
+    ],
+    "board_upper_surface_above_platform_m": 0.05,
+    "measurement_quality": "approximate operator dimensions; uncertainty not quantified"
+  },
+  "captured_landing_reference_in_car_rigid_m": [
+    0.03280133481349713,
+    0.03605256544700508,
+    0.04187932809302084
+  ],
+  "old_car_profile_modified": false,
+  "motion_enabled": false,
+  "heading_calibration": {
+    "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_heading_20261112_154940/heading_candidate.json",
+    "analysis": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_heading_20261112_154940/analysis.json",
+    "method": "measured physical forward projected onto existing car body plane; body up unchanged",
+    "original_orientation_in_rigid_xyzw": [
+      -0.004580261141658394,
+      0.002694661935357851,
+      0.7459205218938423,
+      0.6660137648896955
+    ],
+    "body_plane_yaw_correction_rad": -0.09527835542908775,
+    "body_plane_yaw_correction_deg": -5.459047645034102,
+    "applied_rigid_forward_yaw_deg": 91.01832303139372,
+    "observed_endpoint_rotation_change_deg": 2.2153430601494177,
+    "raw_takeoff_snapshot_reused": true,
+    "physical_rigid_body_unchanged": true,
+    "reference_xy_coordinate_shift_m": [
+      0.001419372457663215,
+      0.00016030049567583582
+    ],
+    "reference_z_coordinate_shift_m": 2.5394497154690443e-05,
+    "powered_motion_validated": true,
+    "original_wand_entry_modified": false,
+    "limitation": "Manual alignment and 2.22 degree endpoint rotation limit angular precision. A single powered 1m forward-return trial passed the existing 8cm arrival tolerance; the complete corrected rectangle is not yet validated.",
+    "powered_motion_validation_scope": "Single 1m forward-return car-only run; full rectangle and cooperative flight not validated",
+    "powered_motion_evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_short_straight_live_20261112_160435/analysis.json"
+  },
+  "marker_restoration_user_confirmation": {
+    "recorded_at": "2026-11-12T16:23:17.819600+08:00",
+    "source": "user statement in this chat",
+    "statement": "已恢复原位，刚体未改",
+    "car_subject": "car01",
+    "markers_restored_to_calibrated_positions": true,
+    "tracker_rigid_unchanged": true,
+    "body_mapping_reused": true,
+    "fixed_takeoff_reused": true,
+    "landing_reference_reused": true,
+    "repeat_heading_capture_required": false,
+    "repeat_rectangle_requested": false,
+    "new_physical_verification_performed": false
+  },
+  "platform_geometry_evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/joint_platform_geometry_20261112_163003/geometry.json"
+}

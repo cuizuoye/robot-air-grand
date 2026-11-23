@@ -1,0 +1,75 @@
+{
+  "scope": "offline implementation and synthetic kinematic tests only",
+  "hardware_commands_sent": 0,
+  "physical_validated": false,
+  "flight_authorized": false,
+  "route": {
+    "diameter_m": 1.5,
+    "center": "0.75m left of resolved car start",
+    "direction": "counterclockwise, first tangent forward",
+    "heading": "fixed at current measured initial UAV heading",
+    "car_speed_mps": 0.25,
+    "car_acceleration_mps2": 0.1,
+    "uav_height_above_takeoff_m": 0.5,
+    "car_returns_to": "resolved side-by-side circle start",
+    "uav_returns_to": "captured session ground takeoff point"
+  },
+  "validation": {
+    "related_regression_before_last_progress_fix": {
+      "passed": 298,
+      "report": "tests.xml"
+    },
+    "final_circle_and_rectangle_delta": {
+      "passed": 8,
+      "report": "final_delta.xml"
+    },
+    "synthetic_circle_metrics": [
+      {
+        "scope": "synthetic kinematic plant; no hardware",
+        "heading_rad": 0.0,
+        "route_seconds": 23.019999999999996,
+        "interior_min_speed_mps": 0.23681772270699378,
+        "interior_max_radial_error_m": 0.02835136244706382,
+        "car_return_error_m": 0.029719459835853973,
+        "uav_return_error_m": 9.536862964814914e-09,
+        "complete": true
+      },
+      {
+        "scope": "synthetic kinematic plant; no hardware",
+        "heading_rad": 1.3,
+        "route_seconds": 23.02,
+        "interior_min_speed_mps": 0.23681772270699383,
+        "interior_max_radial_error_m": 0.028351362447064155,
+        "car_return_error_m": 0.029719459835854518,
+        "uav_return_error_m": 9.645865937986697e-09,
+        "complete": true
+      },
+      {
+        "scope": "synthetic kinematic plant; no hardware",
+        "heading_rad": -2.2,
+        "route_seconds": 23.020000000000003,
+        "interior_min_speed_mps": 0.23681772270699383,
+        "interior_max_radial_error_m": 0.02835136244706471,
+        "car_return_error_m": 0.029719459835854875,
+        "uav_return_error_m": 1.3749567531017774e-08,
+        "complete": true
+      }
+    ]
+  },
+  "files_sha256": {
+    "follow_target_generator.py": "c13629e5a3bf33df23083c48ae4370ae743e4e810ffdd0d7176ad4ec61088892",
+    "car_route_adapter.py": "23e110053fa14a5013af9cd6bafbd79dd022653978c3843ee0bd7e9a05fd72b9",
+    "joint_console_run.py": "62f6625bbbeb695c259ffb68659bf6ca1499e2333f2f81c3e50ba6be7b8a085d",
+    "drone_console.py": "d02c517247884a9bff0e368200070c31f4a31dcbac5c2373ac306c9e3c7f2487",
+    "plan_b/follow/air_ground_circle.candidate.json": "6a419da851a9540b80f05c7d052307d525ab107ed25c6c21526d137ffb41faa5"
+  },
+  "existing_behaviors_retained": [
+    "ground obstacle avoidance and alignment",
+    "explicit takeoff wait",
+    "measured car position and velocity feedforward",
+    "continuous ground descent",
+    "rectangle waypoint stop semantics",
+    "sealed wand teleoperation source",
+    "world bounds and calibration"
+  ]
+}

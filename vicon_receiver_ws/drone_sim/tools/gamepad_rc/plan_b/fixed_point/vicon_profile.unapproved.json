@@ -1,0 +1,598 @@
+{
+  "schema": 1,
+  "scope": "px4-v1143-fixed-ekf-ground-v1",
+  "profile_id": "vicon-fixed-point-candidate-20261028",
+  "firmware": {
+    "version": "1.14.3",
+    "target": "micoair_h743-v2",
+    "uid2": "000600000000343434323533511500280022",
+    "artifact_sha256": "4fbaa8f64a66d1e5f138355dfa78f150a8fc4bd97780e19f499018afc60a143b",
+    "binding_evidence": {
+      "artifact": {
+        "path": "/home/czy/vicon_receiver_ws/drone_sim/firmware_consolidated_20261014_cthIHT/installed_candidate.px4",
+        "sha256": "4fbaa8f64a66d1e5f138355dfa78f150a8fc4bd97780e19f499018afc60a143b"
+      },
+      "historical_install_receipt": {
+        "path": "/home/czy/vicon_receiver_ws/drone_sim/firmware_consolidated_20261014_cthIHT/verification.json",
+        "sha256": "2f6c334997757026eac57fb137c6177aaa15f23157321fe5aba206f3d527d97b"
+      },
+      "current_identity": {
+        "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/observation.json",
+        "sha256": "ad9ef4569499550a21cb2cc7a04646153b3ef226e4f92c9b66453167911b0edf"
+      },
+      "current_flash_readback": false,
+      "limitation": "Historical verified installation plus matching current UID/version/custom hash; not a fresh Flash CRC proof."
+    }
+  },
+  "timestamp_mode": "local_ros_timesync",
+  "parameters": {
+    "EKF2_EV_CTRL": {
+      "type": 6,
+      "value": 11,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/vicon_persistence_20261028_113154/parameters.json#values.EKF2_EV_CTRL",
+      "observed_value_evidence": {
+        "value": 11,
+        "type": 6,
+        "wire_value_hex": "0b000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/vicon_persistence_20261028_113154/parameters.json",
+          "sha256": "f7679d1275331467c9a34bf1261b42473b8bbe59062c75a39d64f231de06af74"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_HGT_REF": {
+      "type": 6,
+      "value": 3,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/vicon_persistence_20261028_113154/parameters.json#values.EKF2_HGT_REF",
+      "observed_value_evidence": {
+        "value": 3,
+        "type": 6,
+        "wire_value_hex": "03000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/vicon_persistence_20261028_113154/parameters.json",
+          "sha256": "f7679d1275331467c9a34bf1261b42473b8bbe59062c75a39d64f231de06af74"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_RNG_CTRL": {
+      "type": 6,
+      "value": 0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/vicon_persistence_20261028_113154/parameters.json#values.EKF2_RNG_CTRL",
+      "observed_value_evidence": {
+        "value": 0,
+        "type": 6,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/vicon_persistence_20261028_113154/parameters.json",
+          "sha256": "f7679d1275331467c9a34bf1261b42473b8bbe59062c75a39d64f231de06af74"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_BARO_CTRL": {
+      "type": 6,
+      "value": 0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_persistence_20261027_155416/readback.json#values.EKF2_BARO_CTRL",
+      "observed_value_evidence": {
+        "value": 0,
+        "type": 6,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_persistence_20261027_155416/readback.json",
+          "sha256": "9a397b7d089841458891aaeaffac51450d76c72f0105c66e065891a1caf39a2f"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_GPS_CTRL": {
+      "type": 6,
+      "value": 7,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_GPS_CTRL",
+      "observed_value_evidence": {
+        "value": 7,
+        "type": 6,
+        "wire_value_hex": "07000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_OF_CTRL": {
+      "type": 6,
+      "value": 0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/vicon_persistence_20261028_113154/parameters.json#values.EKF2_OF_CTRL",
+      "observed_value_evidence": {
+        "value": 0,
+        "type": 6,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/vicon_persistence_20261028_113154/parameters.json",
+          "sha256": "f7679d1275331467c9a34bf1261b42473b8bbe59062c75a39d64f231de06af74"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_AID_MASK": {
+      "type": 6,
+      "value": 0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json#values.EKF2_AID_MASK",
+      "observed_value_evidence": {
+        "value": 0,
+        "type": 6,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json",
+          "sha256": "f6f1626a194d168ccd4475509441540a9282bcadebdc40b85e4675678a2c63dc"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EV_NOISE_MD": {
+      "type": 6,
+      "value": 0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EV_NOISE_MD",
+      "observed_value_evidence": {
+        "value": 0,
+        "type": 6,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EV_QMIN": {
+      "type": 6,
+      "value": 0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EV_QMIN",
+      "observed_value_evidence": {
+        "value": 0,
+        "type": 6,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_MAG_TYPE": {
+      "type": 6,
+      "value": 0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_MAG_TYPE",
+      "observed_value_evidence": {
+        "value": 0,
+        "type": 6,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_MAG_CHECK": {
+      "type": 6,
+      "value": 1,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_MAG_CHECK",
+      "observed_value_evidence": {
+        "value": 1,
+        "type": 6,
+        "wire_value_hex": "01000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "COM_RC_IN_MODE": {
+      "type": 6,
+      "value": 0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_persistence_20261027_155416/readback.json#values.COM_RC_IN_MODE",
+      "observed_value_evidence": {
+        "value": 0,
+        "type": 6,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_persistence_20261027_155416/readback.json",
+          "sha256": "9a397b7d089841458891aaeaffac51450d76c72f0105c66e065891a1caf39a2f"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "COM_OBL_RC_ACT": {
+      "type": 6,
+      "value": 4,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json#values.COM_OBL_RC_ACT",
+      "observed_value_evidence": {
+        "value": 4,
+        "type": 6,
+        "wire_value_hex": "04000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json",
+          "sha256": "f6f1626a194d168ccd4475509441540a9282bcadebdc40b85e4675678a2c63dc"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "COM_RCL_EXCEPT": {
+      "type": 6,
+      "value": 0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_persistence_20261027_155416/readback.json#values.COM_RCL_EXCEPT",
+      "observed_value_evidence": {
+        "value": 0,
+        "type": 6,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_persistence_20261027_155416/readback.json",
+          "sha256": "9a397b7d089841458891aaeaffac51450d76c72f0105c66e065891a1caf39a2f"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "NAV_RCL_ACT": {
+      "type": 6,
+      "value": 3,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json#values.NAV_RCL_ACT",
+      "observed_value_evidence": {
+        "value": 3,
+        "type": 6,
+        "wire_value_hex": "03000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json",
+          "sha256": "f6f1626a194d168ccd4475509441540a9282bcadebdc40b85e4675678a2c63dc"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "NAV_DLL_ACT": {
+      "type": 6,
+      "value": 3,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json#values.NAV_DLL_ACT",
+      "observed_value_evidence": {
+        "value": 3,
+        "type": 6,
+        "wire_value_hex": "03000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json",
+          "sha256": "f6f1626a194d168ccd4475509441540a9282bcadebdc40b85e4675678a2c63dc"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "COM_ARM_HFLT_CHK": {
+      "type": 6,
+      "value": 1,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.COM_ARM_HFLT_CHK",
+      "observed_value_evidence": {
+        "value": 1,
+        "type": 6,
+        "wire_value_hex": "01000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "COM_POSCTL_NAVL": {
+      "type": 6,
+      "value": 1,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.COM_POSCTL_NAVL",
+      "observed_value_evidence": {
+        "value": 1,
+        "type": 6,
+        "wire_value_hex": "01000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "COM_DL_LOSS_T": {
+      "type": 6,
+      "value": 10,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.COM_DL_LOSS_T",
+      "observed_value_evidence": {
+        "value": 10,
+        "type": 6,
+        "wire_value_hex": "0a000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EV_DELAY": {
+      "type": 9,
+      "value": 0.0,
+      "status": "pending_calibration",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EV_DELAY",
+      "observed_value_evidence": {
+        "value": 0.0,
+        "type": 9,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EVP_NOISE": {
+      "type": 9,
+      "value": 0.10000000149011612,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EVP_NOISE",
+      "observed_value_evidence": {
+        "value": 0.10000000149011612,
+        "type": 9,
+        "wire_value_hex": "cdcccc3d",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EVV_NOISE": {
+      "type": 9,
+      "value": 0.10000000149011612,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EVV_NOISE",
+      "observed_value_evidence": {
+        "value": 0.10000000149011612,
+        "type": 9,
+        "wire_value_hex": "cdcccc3d",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EVA_NOISE": {
+      "type": 9,
+      "value": 0.10000000149011612,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EVA_NOISE",
+      "observed_value_evidence": {
+        "value": 0.10000000149011612,
+        "type": 9,
+        "wire_value_hex": "cdcccc3d",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EVP_GATE": {
+      "type": 9,
+      "value": 5.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EVP_GATE",
+      "observed_value_evidence": {
+        "value": 5.0,
+        "type": 9,
+        "wire_value_hex": "0000a040",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EVV_GATE": {
+      "type": 9,
+      "value": 3.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EVV_GATE",
+      "observed_value_evidence": {
+        "value": 3.0,
+        "type": 9,
+        "wire_value_hex": "00004040",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EV_POS_X": {
+      "type": 9,
+      "value": 0.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EV_POS_X",
+      "observed_value_evidence": {
+        "value": 0.0,
+        "type": 9,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EV_POS_Y": {
+      "type": 9,
+      "value": 0.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EV_POS_Y",
+      "observed_value_evidence": {
+        "value": 0.0,
+        "type": 9,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_EV_POS_Z": {
+      "type": 9,
+      "value": 0.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_EV_POS_Z",
+      "observed_value_evidence": {
+        "value": 0.0,
+        "type": 9,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_IMU_POS_X": {
+      "type": 9,
+      "value": 0.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_IMU_POS_X",
+      "observed_value_evidence": {
+        "value": 0.0,
+        "type": 9,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_IMU_POS_Y": {
+      "type": 9,
+      "value": 0.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_IMU_POS_Y",
+      "observed_value_evidence": {
+        "value": 0.0,
+        "type": 9,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "EKF2_IMU_POS_Z": {
+      "type": 9,
+      "value": 0.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.EKF2_IMU_POS_Z",
+      "observed_value_evidence": {
+        "value": 0.0,
+        "type": 9,
+        "wire_value_hex": "00000000",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "COM_OF_LOSS_T": {
+      "type": 9,
+      "value": 1.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json#values.COM_OF_LOSS_T",
+      "observed_value_evidence": {
+        "value": 1.0,
+        "type": 9,
+        "wire_value_hex": "0000803f",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json",
+          "sha256": "f6f1626a194d168ccd4475509441540a9282bcadebdc40b85e4675678a2c63dc"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "COM_RC_LOSS_T": {
+      "type": 9,
+      "value": 1.5,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json#values.COM_RC_LOSS_T",
+      "observed_value_evidence": {
+        "value": 1.5,
+        "type": 9,
+        "wire_value_hex": "0000c03f",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_readonly_20261027_154445/parameters.json",
+          "sha256": "f6f1626a194d168ccd4475509441540a9282bcadebdc40b85e4675678a2c63dc"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    },
+    "COM_KILL_DISARM": {
+      "type": 9,
+      "value": 5.0,
+      "status": "unreviewed",
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json#values.COM_KILL_DISARM",
+      "observed_value_evidence": {
+        "value": 5.0,
+        "type": 9,
+        "wire_value_hex": "0000a040",
+        "source": {
+          "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+          "sha256": "ee5c20cb8387281beaad6221df02614492d449e8eaec2850734e42382a3274a9"
+        }
+      },
+      "review_scope": "Observed value reconciled; retains existing approval status. Not a new tuning or flight approval."
+    }
+  },
+  "delay_calibration": {
+    "status": "pending_calibration",
+    "evidence": ""
+  },
+  "persistence": {
+    "status": "unverified",
+    "configuration_sha256": null,
+    "evidence_sha256": null,
+    "per_parameter_evidence_complete": true,
+    "single_current_boot_full_readback_verified": false,
+    "evidence_note": "Four Vicon changes reboot-verified; reuse earlier unaffected values. Combined 34 values are not a single-session complete post-reboot capture."
+  },
+  "source_files": [
+    "src/modules/ekf2/EKF2.hpp",
+    "src/modules/ekf2/ekf2_params.c"
+  ],
+  "physical_authorization": false,
+  "flight_authorized": false,
+  "historical_value_source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/backup_20261020_1136_frozen_target/parameters_verified.json",
+  "last_confirmed_partial_source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/missing_parameters.json",
+  "warning": "离线候选已对齐 Pocket/WiFi 本机 ROS 时间戳路径；未修改参数值或批准状态。静止融合证据已复用，时钟残差调优暂缓；刚体、固定档审核与正式入口实机联调尚未完成。",
+  "reconciliation_record": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/takeoff_evidence_20261028_readonly/reconciliation.json",
+  "timestamp_evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/wifi_sync_fusion_effect_20261104_171242/analysis.json",
+  "timestamp_scope": "Local Vicon receiver ROS clock, not camera exposure time. Same-owner FC TIMESYNC replies; PX4 arrival-time fallback and mapped timestamps are both explicit. Residual precision tuning deferred; not dynamic or flight approval."
+}

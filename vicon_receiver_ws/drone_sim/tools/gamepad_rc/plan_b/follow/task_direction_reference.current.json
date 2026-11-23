@@ -1,0 +1,46 @@
+{
+  "schema": "mircoair_world_reference_v1",
+  "position_frame": "map",
+  "world_origin_and_axes_preserved": true,
+  "forward_map_unit": [
+    -0.9968829409887774,
+    -0.0788948792100333,
+    0.0
+  ],
+  "left_map_unit": [
+    0.0788948792100333,
+    -0.9968829409887774,
+    0.0
+  ],
+  "up_map_unit": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "fixed_forward_yaw_map_rad": -3.0626156987053568,
+  "ground_reference_map_m": [
+    0.07474873909082562,
+    0.37071343651948735,
+    0.050770676018545846
+  ],
+  "ground_reference_z_map_m": 0.050770676018545846,
+  "ground_reference_xy_used_as_motion_origin": false,
+  "north_alignment_verified": false,
+  "imu_origin_verified": false,
+  "flight_ready": false,
+  "actual_sent_to_fc": 0,
+  "user_instruction": "忽略细微变化及放置的不完全对齐；以当前机头及人员面对的大致方向作为后续任务+X",
+  "task_axes": {
+    "x": "fixed forward selected on 2026-11-20",
+    "y": "left when facing +X",
+    "z": "up"
+  },
+  "reference_evidence": "/data/home-migration-20261118/vicon_receiver_ws/drone_sim/preparation_runs/extrinsics_rebase_20261120_143902/rigid_frame_transfer.json",
+  "rigid_revision": "MircoAir-observed-20261120-geometry-rebased",
+  "direction_follows_future_uav_yaw": false,
+  "motion_origin_policy": "Use fresh task-start position, not the saved observation XY",
+  "ground_reference_scope": "Historical observation only; refresh ground reference for each flight",
+  "runtime_binding": "Direction copied into air_ground_side_follow.current.json route_heading_map_rad on 2026-11-20; runtime uses the reviewed inline value, not this file or its historic origin.",
+  "invalidated_by": "Vicon world recalibration or coordinate-axis changes; rigid-body remapping needs separate verification",
+  "direction_correction": "Recompute same operator-selected historical observation with corrected mounting; no map-axis/server changes."
+}

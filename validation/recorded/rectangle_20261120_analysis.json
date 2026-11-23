@@ -1,0 +1,124 @@
+{
+  "complete_normal_mission": true,
+  "fault": null,
+  "airborne_duration_s": 104.057168638,
+  "phases": [
+    {
+      "phase": "WAIT_READY",
+      "start_ns": 22198532438716,
+      "duration_s": 2.350688505
+    },
+    {
+      "phase": "WAIT_START",
+      "start_ns": 22200883127221,
+      "duration_s": 121.782634716
+    },
+    {
+      "phase": "WAIT_READY",
+      "start_ns": 22322665761937,
+      "duration_s": 1.62310571
+    },
+    {
+      "phase": "WAIT_START",
+      "start_ns": 22324288867647,
+      "duration_s": 77.594026622
+    },
+    {
+      "phase": "TO_TAKEOFF",
+      "start_ns": 22401882894269,
+      "duration_s": 4.376068168
+    },
+    {
+      "phase": "WAIT_TAKEOFF",
+      "start_ns": 22406258962437,
+      "duration_s": 25.105958741
+    },
+    {
+      "phase": "TAKEOFF",
+      "start_ns": 22431364921178,
+      "duration_s": 8.298063984
+    },
+    {
+      "phase": "RENDEZVOUS",
+      "start_ns": 22439662985162,
+      "duration_s": 7.667136876
+    },
+    {
+      "phase": "FOLLOW",
+      "start_ns": 22447330122038,
+      "duration_s": 57.648517202
+    },
+    {
+      "phase": "WAIT_CAR_STOP",
+      "start_ns": 22504978639240,
+      "duration_s": 1.212957231
+    },
+    {
+      "phase": "ALIGN",
+      "start_ns": 22506191596471,
+      "duration_s": 2.692973961
+    },
+    {
+      "phase": "DESCEND",
+      "start_ns": 22508884570432,
+      "duration_s": 25.538095115
+    },
+    {
+      "phase": "LAND",
+      "start_ns": 22534422665547,
+      "duration_s": 3.718973504
+    },
+    {
+      "phase": "COMPLETE",
+      "start_ns": 22538141639051,
+      "duration_s": 0.918180928
+    }
+  ],
+  "route_legs_observed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "follow_horizontal_reference_error_m": {
+    "median": 0.18826280047132196,
+    "p95": 0.29282762407929,
+    "max": 0.3092658409334398
+  },
+  "follow_height_above_takeoff_m": {
+    "median": 0.4928247555397437,
+    "min": 0.4177288823110149,
+    "max": 0.5247832501415388
+  },
+  "descent": {
+    "reference_speed_mps": 0.08,
+    "paused_samples": 0,
+    "observed_half_second_down_speed_mps": {
+      "median": 0.003289486286965913,
+      "p95": 0.08379652500039544,
+      "max": 0.09585293176837177
+    },
+    "land_handoff_height_above_takeoff_m": 0.019875656755642238
+  },
+  "origin_map_m": [
+    0.7523387190093587,
+    -0.709437204708787,
+    0.026870065699324697
+  ],
+  "landed_position_map_m": [
+    0.7409954259770235,
+    -0.5162893018273312,
+    0.028207204853084904
+  ],
+  "landing_horizontal_error_m": 0.1934807036485078,
+  "landed_disarmed": true,
+  "car_stopped": true,
+  "operator_feedback_pending": false,
+  "scope": "Vicon body-reference positions and flight-controller state; not independent ground truth or 5 cm landing acceptance",
+  "operator_feedback": {
+    "both_fully_stopped": true,
+    "obvious_fast_drop_observed": false,
+    "prolonged_hover_observed": false,
+    "verbatim": "已经完全停止，暂时没观察到快速下落与长时间悬停"
+  }
+}

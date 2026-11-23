@@ -1,0 +1,326 @@
+{
+  "schema": "air_ground_sequence_v1",
+  "geometry_is_example": false,
+  "live_inputs": {
+    "measured": true,
+    "world_revision": "Vicon-world-observed-20261112-not-surveyed",
+    "car_rigid_revision": "car01-observed-20261120-geometry-rebased",
+    "uav_rigid_revision": "MircoAir-observed-20261120-geometry-rebased",
+    "car_body_origin_in_rigid_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "car_body_orientation_in_rigid_xyzw": [
+      -0.002370305461977678,
+      -0.004331621241122532,
+      -0.9999859602095429,
+      0.0019230427033577588
+    ],
+    "car_ground_z_map_m": 0.10060620627599906,
+    "car_ground_plane_map_abc": [
+      -0.023835413780413223,
+      0.007386941734231541,
+      0.11901138220993841
+    ],
+    "measurement_quality": "2026-11-20 geometric frame transfer, same-frame original SDK data and operator-confirmed left/parallel placement. Approximate body mounting; car origin remains virtual rigid centroid, not surveyed chassis center.",
+    "car_reference_definition": "Virtual point at car01 rigid origin; physical-forward axes inherited through recorded 2026-11-20 frame transfer."
+  },
+  "note": "2026-11-20矩形跟随待实飞：按本次摆放方向冻结前3m→左2m→后3m→右2m；0.25m/s、0.5m起飞高度；返回旁侧本轮起飞点连续缓降。根据用户现场空间确认更新本配置边界，含0.40m参考点跟踪余量，机体外缘净空仍依赖现场确认。没有飞行授权。",
+  "frame_id": "map",
+  "frame_revision": "Vicon-world-observed-20261112-car01-reference-updated-20261118",
+  "car_source": "car01",
+  "uav_source": "MircoAir",
+  "landing_heading": "initial_world",
+  "clearance_m": 0.5,
+  "car_speed_mps": 0.25,
+  "car_acceleration_mps2": 0.1,
+  "car_arrival_m": 0.08,
+  "car_yaw_tolerance_rad": 0.17,
+  "stopped_speed_mps": 0.05,
+  "stopped_yaw_rate_rps": 0.08,
+  "settle_seconds": 0.6,
+  "climb_speed_mps": 0.15,
+  "descent_speed_mps": 0.08,
+  "yaw_rate_rps": 0.3,
+  "vertical_tolerance_m": 0.05,
+  "landing_xy_tolerance_m": 0.2,
+  "landing_yaw_tolerance_rad": 0.2,
+  "land_handoff_height_m": 0.0,
+  "follow_limits": {
+    "xmin": -2.6695693066651396,
+    "xmax": 1.3962577328252495,
+    "ymin": -1.6731477939628938,
+    "ymax": 2.6416881225686315,
+    "speed_mps": 0.4,
+    "acceleration_mps2": 0.2,
+    "target_age_s": 1.0,
+    "loss_timeout_s": 2.0,
+    "max_step_s": 1.0
+  },
+  "car_entry": "/home/czy/vicon_mecanum_ws/candidates/wand_4wse_pose2000_20261105/entry.py",
+  "uav_entry": "/home/czy/vicon_receiver_ws/drone_sim/tools/gamepad_rc/vicon_fixed_point_entry.py",
+  "flight_status_timeout_s": 3.0,
+  "maximum_task_seconds": 600,
+  "landing_mode": "initial_ground",
+  "start_alignment": {
+    "mode": "stationary_uav",
+    "uav_rigid_offset_car_forward_left_m": [
+      0.0,
+      -0.51
+    ],
+    "avoidance": {
+      "car_size_m": [
+        0.18,
+        0.16
+      ],
+      "uav_size_m": [
+        0.17,
+        0.17
+      ],
+      "car_reference_margin_m": 0.05,
+      "uav_reference_margin_m": 0.03,
+      "path_margin_m": 0.15,
+      "geometry_source": "2026-11-23 operator dimensions; rounded UAV corners bounded by full rectangle",
+      "reference_margin_status": "Conservative allowances about calibrated body references; car centroid-to-chassis offset to confirm before first all-sides live test",
+      "physical_validated": false
+    }
+  },
+  "route_local_forward_left_m": [
+    [
+      3.0,
+      0.0
+    ],
+    [
+      3.0,
+      2.0
+    ],
+    [
+      0.0,
+      2.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "site_evidence": {
+    "scope": "Measured reference and previous overhead flight retained; new velocity feedforward and ground stop-anchor behavior are offline-only.",
+    "calibration_source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/side_spacing_20261118_112149/car_heading_candidate.json",
+    "separation_reference": "Vicon rigid centers; forward/left from calibrated body heading",
+    "physical_clearance_confirmed": false,
+    "physical_validated": false,
+    "next_route_local_forward_left_m": [
+      [
+        3.0,
+        0.0
+      ],
+      [
+        3.0,
+        2.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "current_static_placement": {
+      "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/side_spacing_20261118_112149/sdk_snapshot.json",
+      "sha256": "563560b1336b5026157120391b317b0b4c5de1f6c4245b1cec161d77fb0db9cc",
+      "operator_report": "front car markers were moved; current car01 origin relative to chassis center unknown; noses parallel; exterior edge gap approximately 20 cm",
+      "measured_rigid_lateral_separation_m": 0.3187333779949336,
+      "configured_separation_m": 0.32,
+      "selection": "round lateral separation outward to centimetres; zero longitudinal target retained",
+      "clearance_scope": "operator-reported current static gap only; not a swept-body, path or motion-error guarantee",
+      "scope": "Historical 0.32m placement, superseded by current_alignment_spacing; not the current target."
+    },
+    "reference_update": {
+      "candidate": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/side_spacing_20261118_112149/car_heading_candidate.json",
+      "old_origin_estimate_discarded": true,
+      "virtual_control_point": "current car01 rigid origin",
+      "chassis_center_offset_known": false,
+      "yaw_change_deg": 54.90717745740136,
+      "ground_plane_old_abc": [
+        -0.023835413780413223,
+        0.007386941734231541,
+        0.11632328267194962
+      ],
+      "ground_plane_anchor_map_m": [
+        0.6385769131187007,
+        -0.43108922389075965,
+        0.10060620627599906
+      ],
+      "ground_plane_scope": "same prior world slopes; new static height anchor only",
+      "wand_configuration_modified": false,
+      "loaded_platform_configuration_modified": false,
+      "uav_extrinsics_modified": false,
+      "hardware_commands_sent": 0,
+      "physical_motion_validated": false
+    },
+    "new_mapping_forward_validation": {
+      "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/car_direction_20261118/analysis.json",
+      "scope": "single real car-only forward segment at 0.1m/s; no close approach, turn or flight validation",
+      "operator_confirmed_actual_forward": true,
+      "feedback_stop_confirmed": true,
+      "actual_forward_m": 0.3651257670175685,
+      "max_cross_track_m": 0.009508755329487167,
+      "endpoint_distance_to_target_m": 0.035686800545899885
+    },
+    "current_alignment_spacing": {
+      "source": "/data/home-migration-20261118/vicon_receiver_ws/drone_sim/preparation_runs/car_realign_20261120_162135/alignment_analysis.json",
+      "configured_lateral_m": 0.51,
+      "measured_lateral_m": 0.49659612340815906,
+      "longitudinal_residual_m": 0.010900677298858887,
+      "heading_difference_deg": -0.3054093745217081,
+      "operator_accepted": true,
+      "scope": "Car-only realignment and final placement accepted; shortened-spacing airborne rendezvous/return not yet tested",
+      "target_policy": "Keep nominal 0.51m target; do not accumulate observed stop error"
+    },
+    "side_alignment_validation": {
+      "source": "/data/home-migration-20261118/vicon_receiver_ws/drone_sim/preparation_runs/car_realign_20261120_162135/alignment_analysis.json",
+      "operator_confirmed_stopped_and_side_by_side": true,
+      "car_stop_confirmed": true,
+      "measured_lateral_m": 0.49659612340815906,
+      "relative_heading_error_deg": -0.3054093745217081,
+      "joint_airborne_follow_validated": false,
+      "scope": "This car-only approach and placement, not arbitrary paths or airborne flight"
+    },
+    "first_side_follow_flight": {
+      "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/side_follow_flight_20261118_114800/analysis.json",
+      "takeoff_handoff_validated": true,
+      "car_out_and_back_with_airborne_uav_observed": true,
+      "operator_confirmed_both_stopped": true,
+      "normal_automatic_landing_passed": false,
+      "closed_via_existing_cancel_land": true,
+      "car_cleanup_confirmation_passed": false,
+      "scope": "One 1m out/back at 0.2m/s. Not precise offset tracking or full normal mission completion."
+    },
+    "overhead_revision": {
+      "physical_validated": true,
+      "height_reference": "0.50m above this session takeoff body reference, not 0.50m above car roof",
+      "horizontal_reference": "car01 virtual control point; chassis center remains unsurveyed",
+      "landing": "original adjacent ground point; no platform landing",
+      "hardware_commands_sent": 0,
+      "evidence": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/overhead_follow_20261118_121313/analysis.json",
+      "validation_scope": "Only previous position-only controller, 1m out/back at0.2m/s,0.5m height and adjacent landing; operator confirmed descent and stop"
+    },
+    "controller_revision": {
+      "physical_validated": false,
+      "controller_velocity_feedforward": true,
+      "evidence": "preparation_runs/follow_feedforward_offline_20261118"
+    },
+    "rigid_frame_transfer": {
+      "path": "/data/home-migration-20261118/vicon_receiver_ws/drone_sim/preparation_runs/extrinsics_rebase_20261120_143902/rigid_frame_transfer.json",
+      "sha256": "9f521f03f10dc2d2e11b4f05f63eecfc7bd38af516f693380d093cb7fd0e45a0",
+      "static_geometry_confirmed": true,
+      "flight_validated": false,
+      "car_wand_entry_modified": false
+    },
+    "continuous_ground_landing": {
+      "source": "preparation_runs/joint_follow_20261120_150245/analysis.json",
+      "reason": "descent 128.55s; last30s paused98.85%; operator reports low hover instead of normal landing",
+      "physical_validated": false,
+      "user_priority": "normal landing before landing precision"
+    },
+    "rectangle_revision": {
+      "physical_validated": false,
+      "route_m": [
+        3.0,
+        2.0
+      ],
+      "speed_mps": 0.25,
+      "existing_world_bounds_retained": false,
+      "current_recorded_start_fits": true,
+      "flight_authorized": false
+    },
+    "rectangle_site": {
+      "operator_statement": "目前无人机与小车朝向已经修改为合适位置，我确认有足够空间",
+      "geometry_report": "/data/home-migration-20261118/vicon_receiver_ws/drone_sim/preparation_runs/rectangle_site_20261120_151907/geometry.json",
+      "bounds_before": {
+        "xmin": -2.029737875049167,
+        "xmax": 1.1942050976891045,
+        "ymin": -1.6731477939628938,
+        "ymax": 2.4733151381367997
+      },
+      "bounds_after": {
+        "xmin": -2.6695693066651396,
+        "xmax": 1.3962577328252495,
+        "ymin": -1.6731477939628938,
+        "ymax": 2.6416881225686315
+      },
+      "reference_tracking_margin_m": 0.4,
+      "margin_reason": "Prior measured horizontal following maximum about0.335m; rounded to0.40m for target/body-reference envelope, does not include vehicle outer radius",
+      "physical_clearance_source": "operator confirmation; not measured by SDK",
+      "whole_route_vicon_coverage_measured": false,
+      "scope": "rectangle candidate only; does not modify world coordinate system, receiver, office network or standalone car",
+      "flight_authorized": false
+    },
+    "return_corridor_fix": {
+      "source_run": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/rectangle_prepare_20261120_153009",
+      "source_analysis_sha256": "1a150076b8b67945624b9b44ab4b83c01604906e71073a082ab2552a37afc31e",
+      "reference_path_bounds_map_m": {
+        "xmin": -1.973320232984447,
+        "xmax": 0.9962577328252494,
+        "ymin": -0.9551170670108626,
+        "ymax": 2.2416881225686316
+      },
+      "reference_tracking_margin_m": 0.4,
+      "bounds_before": {
+        "xmin": -2.6695693066651396,
+        "xmax": 1.1942050976891045,
+        "ymin": -1.6731477939628938,
+        "ymax": 2.6217353589586176
+      },
+      "bounds_after": {
+        "xmin": -2.6695693066651396,
+        "xmax": 1.3962577328252495,
+        "ymin": -1.6731477939628938,
+        "ymax": 2.6416881225686315
+      },
+      "includes": "takeoff/return ground point, rendezvous and complete rectangle; convex XY envelope",
+      "operator_clearance_source": "existing operator confirmation of sufficient space for current layout; no new clearance measurement",
+      "physical_airframe_radius_included": false,
+      "world_coordinates_changed": false,
+      "automatic_runtime_expansion": false,
+      "hardware_executed": false,
+      "native_land_speed_modified": false
+    },
+    "speed_update": {
+      "car_speed_mps": 0.25,
+      "car_acceleration_mps2": 0.1,
+      "uav_reference_speed_limit_mps": 0.4,
+      "baseline_run": "rectangle_prepare_20261120_155542",
+      "baseline_car_speed_mps": 0.2,
+      "new_speed_physically_validated": false,
+      "scope": "Reuse stationary_uav alignment and stopped takeoff wait; no hardware action in this update."
+    }
+  },
+  "follow_position": "above_car",
+  "airborne_offset_car_forward_left_m": [
+    0.0,
+    0.0
+  ],
+  "follow_arrival_tolerance_m": 0.3,
+  "follow_velocity_feedforward": true,
+  "landing_horizontal_speed_mps": 0.08,
+  "controller_velocity_feedforward": true,
+  "landing_position_feedback_gain_s_inv": 0.5,
+  "landing_integral_gain_s_inv2": 0.05,
+  "landing_velocity_damping": 0.4,
+  "landing_settling_speed_mps": 0.2,
+  "landing_settle_seconds": 0.6,
+  "route_heading_map_rad": 1.6780184281310873,
+  "route_direction_evidence": {
+    "reference_file": "/data/home-migration-20261118/vicon_receiver_ws/drone_sim/preparation_runs/rectangle_site_20261120_151907/geometry.json",
+    "source": "/data/home-migration-20261118/vicon_receiver_ws/drone_sim/preparation_runs/rectangle_site_20261120_151907/sdk_snapshot.json",
+    "source_sha256": "d370045650cf0b7139282b34f7e3007eefb2560b4375644c902781c1242cddb1",
+    "selection": "2026-11-20 user repositioned headings for sufficient rectangle space; freeze current corrected UAV forward for this rectangle only",
+    "runtime_binding": "Inline route_heading_map_rad reviewed with plan; fresh origin still resolved at CAR_START",
+    "other_task_direction_files_changed": false
+  },
+  "ground_descent_continuous": true
+}

@@ -1,0 +1,22 @@
+{
+  "phase": "COMPLETE",
+  "stop_confirmed": true,
+  "goal_error_m": 0.059586961102407174,
+  "uav_rigid_relative_car_forward_m": -0.06002431601764337,
+  "uav_rigid_relative_car_left_m": -0.5201981725606176,
+  "rigid_center_distance_m": 0.5236497467284713,
+  "heading_difference_deg": 0.17469531876740801,
+  "uav_body_displacement_m": 8.389814554870415e-05,
+  "min_body_center_distance_m": 0.3946538863192307,
+  "all_measured_footprints_clear": true,
+  "rear_crossing_car_forward_positions_m": [
+    -0.4058137646214646,
+    -0.39421440084663906
+  ],
+  "planned_translation_m": 1.7087670725630304,
+  "operator_observation": "绕行路线正常",
+  "actual_sent_to_fc": 0,
+  "faults": [
+    "None"
+  ]
+}

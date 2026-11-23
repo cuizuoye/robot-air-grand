@@ -1,0 +1,1800 @@
+{
+  "scope": "Historical response sizes and chunk arrival timing only; values are NOT current aircraft state.",
+  "source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/wifi_battery_fusion_20261105_attempt01/traffic.jsonl",
+  "source_sha256": "044089bcf863ff8e68ec9a4ff453731aa39606b100e6025a773e909edbab793e",
+  "queries": [
+    {
+      "command": "listener actuator_armed -n 1\n",
+      "requested_at": 680.881038112,
+      "chunks": [
+        {
+          "delay_s": 0.015451100999939626,
+          "text": "nsh: sysinit: fopen failed: No such file or directory\n\nNuttShell (NSH)"
+        },
+        {
+          "delay_s": 0.015451100999939626,
+          "text": " NuttX-11.0.0\nnsh> \u001b[Klistener actuator_armed -n 1\n\nTOPIC: actuator_ar"
+        },
+        {
+          "delay_s": 0.015451100999939626,
+          "text": "med\n actuator_armed\n    timestamp: 302426705 (0.142228 seconds ago)\n  "
+        },
+        {
+          "delay_s": 0.02510250199998154,
+          "text": "  armed: False\n    prearmed: False\n    ready_to_arm: True\n    lockdown"
+        },
+        {
+          "delay_s": 0.02510250199998154,
+          "text": ": False\n    manual_lockdown: False\n    force_failsafe: False\n    in_es"
+        },
+        {
+          "delay_s": 0.02510250199998154,
+          "text": "c_calibration_mode: False\n\nnsh> \u001b[K"
+        }
+      ]
+    },
+    {
+      "command": "listener estimator_selector_status -n 1\n",
+      "requested_at": 686.939494488,
+      "chunks": [
+        {
+          "delay_s": 0.017577627999912693,
+          "text": "listener estimator_selector_status -n 1\n\nTOPIC: estimator_selector_sta"
+        },
+        {
+          "delay_s": 0.02701862699996127,
+          "text": "tus\n estimator_selector_status\n    timestamp: 308146313 (0.479684 seco"
+        },
+        {
+          "delay_s": 0.02701862699996127,
+          "text": "nds ago)\n    last_instance_change: 242901\n    instance_changed_count: "
+        },
+        {
+          "delay_s": 0.02701862699996127,
+          "text": "1\n    accel_device_id: 6946834 (Type: 0x6A, SPI:2 (0x00))\n    baro_dev"
+        },
+        {
+          "delay_s": 0.044949902999974256,
+          "text": "ice_id: 5207825 (Type: 0x4F, I2C:2 (0x77))\n    gyro_device_id: 6684690"
+        },
+        {
+          "delay_s": 0.044949902999974256,
+          "text": " (Type: 0x66, SPI:2 (0x00))\n    mag_device_id: 0 (Type: 0x00, UNKNOWN:"
+        },
+        {
+          "delay_s": 0.044949902999974256,
+          "text": "0 (0x00))\n    combined_test_ratio: [0.50180, 0.50194, nan, nan, nan, n"
+        },
+        {
+          "delay_s": 0.044949902999974256,
+          "text": "an, nan, nan, nan]\n    relative_test_ratio: [0.00000, -0.23380, nan, n"
+        },
+        {
+          "delay_s": 0.0475050420000116,
+          "text": "an, nan, nan, nan, nan, nan]\n    accumulated_gyro_error: [0.00000, 0.0"
+        },
+        {
+          "delay_s": 0.0475050420000116,
+          "text": "0000, nan, nan]\n    accumulated_accel_error: [0.00000, 0.00000, nan, n"
+        },
+        {
+          "delay_s": 0.0475050420000116,
+          "text": "an]\n    primary_instance: 0\n    instances_available: 2\n    healthy: [T"
+        },
+        {
+          "delay_s": 0.0570116760000019,
+          "text": "rue, True, False, False, False, False, False, False, False]\n    gyro_f"
+        },
+        {
+          "delay_s": 0.0570116760000019,
+          "text": "ault_detected: False\n    accel_fault_detected: False\n\nnsh> \u001b[K"
+        }
+      ]
+    },
+    {
+      "command": "listener estimator_status_flags -i 0 -n 1\n",
+      "requested_at": 686.340941867,
+      "chunks": [
+        {
+          "delay_s": 0.013889730000073541,
+          "text": "listener estimator_status_flags -i 0 -n 1\n\nTOPIC: estimator_status_fla"
+        },
+        {
+          "delay_s": 0.013889730000073541,
+          "text": "gs instance 0 #1\n estimator_status_flags\n    timestamp: 307158705 (0.8"
+        },
+        {
+          "delay_s": 0.026132883000059337,
+          "text": "65228 seconds ago)\n    timestamp_sample: 307057663 (101042 us before t"
+        },
+        {
+          "delay_s": 0.026132883000059337,
+          "text": "imestamp)\n    control_status_changes: 4\n    fault_status_changes: 0\n  "
+        },
+        {
+          "delay_s": 0.026132883000059337,
+          "text": "  innovation_fault_status_changes: 0\n    cs_tilt_align: True\n    cs_ya"
+        },
+        {
+          "delay_s": 0.034319200000027195,
+          "text": "w_align: True\n    cs_gps: False\n    cs_opt_flow: False\n    cs_mag_hdg:"
+        },
+        {
+          "delay_s": 0.034319200000027195,
+          "text": " False\n    cs_mag_3d: False\n    cs_mag_dec: False\n    cs_in_air: False"
+        },
+        {
+          "delay_s": 0.034319200000027195,
+          "text": "\n    cs_wind: False\n    cs_baro_hgt: False\n    cs_rng_hgt: False\n    c"
+        },
+        {
+          "delay_s": 0.044368830000053094,
+          "text": "s_gps_hgt: False\n    cs_ev_pos: True\n    cs_ev_yaw: True\n    cs_ev_hgt"
+        },
+        {
+          "delay_s": 0.044368830000053094,
+          "text": ": True\n    cs_fuse_beta: False\n    cs_mag_field_disturbed: False\n    c"
+        },
+        {
+          "delay_s": 0.044368830000053094,
+          "text": "s_fixed_wing: False\n    cs_mag_fault: False\n    cs_fuse_aspd: False\n  "
+        },
+        {
+          "delay_s": 0.044368830000053094,
+          "text": "  cs_gnd_effect: False\n    cs_rng_stuck: False\n    cs_gps_yaw: False\n "
+        },
+        {
+          "delay_s": 0.05411781200007226,
+          "text": "   cs_mag_aligned_in_flight: False\n    cs_ev_vel: False\n    cs_synthet"
+        },
+        {
+          "delay_s": 0.05411781200007226,
+          "text": "ic_mag_z: False\n    cs_vehicle_at_rest: True\n    cs_gps_yaw_fault: Fal"
+        },
+        {
+          "delay_s": 0.05411781200007226,
+          "text": "se\n    cs_rng_fault: False\n    cs_inertial_dead_reckoning: False\n    c"
+        },
+        {
+          "delay_s": 0.06437148999998499,
+          "text": "s_wind_dead_reckoning: False\n    cs_rng_kin_consistent: False\n    cs_f"
+        },
+        {
+          "delay_s": 0.06437148999998499,
+          "text": "ake_pos: False\n    cs_fake_hgt: False\n    cs_gravity_vector: False\n   "
+        },
+        {
+          "delay_s": 0.06437148999998499,
+          "text": " fs_bad_mag_x: False\n    fs_bad_mag_y: False\n    fs_bad_mag_z: False\n "
+        },
+        {
+          "delay_s": 0.07560603900003571,
+          "text": "   fs_bad_hdg: False\n    fs_bad_mag_decl: False\n    fs_bad_airspeed: F"
+        },
+        {
+          "delay_s": 0.07560603900003571,
+          "text": "alse\n    fs_bad_sideslip: False\n    fs_bad_optflow_x: False\n    fs_bad"
+        },
+        {
+          "delay_s": 0.07560603900003571,
+          "text": "_optflow_y: False\n    fs_bad_vel_n: False\n    fs_bad_vel_e: False\n    "
+        },
+        {
+          "delay_s": 0.07560603900003571,
+          "text": "fs_bad_vel_d: False\n    fs_bad_pos_n: False\n    fs_bad_pos_e: False\n  "
+        },
+        {
+          "delay_s": 0.08315762799998083,
+          "text": "  fs_bad_pos_d: False\n    fs_bad_acc_bias: False\n    fs_bad_acc_vertic"
+        },
+        {
+          "delay_s": 0.08315762799998083,
+          "text": "al: False\n    fs_bad_acc_clipping: False\n    reject_hor_vel: False\n   "
+        },
+        {
+          "delay_s": 0.08315762799998083,
+          "text": " reject_ver_vel: False\n    reject_hor_pos: False\n    reject_ver_pos: F"
+        },
+        {
+          "delay_s": 0.10329481400003715,
+          "text": "alse\n    reject_yaw: False\n    reject_airspeed: False\n    reject_sides"
+        },
+        {
+          "delay_s": 0.10329481400003715,
+          "text": "lip: False\n    reject_hagl: False\n    reject_optflow_x: False\n    reje"
+        },
+        {
+          "delay_s": 0.10329481400003715,
+          "text": "ct_optflow_y: False\n\nnsh> \u001b[K"
+        }
+      ]
+    },
+    {
+      "command": "listener estimator_aid_src_ev_pos -i 0 -n 1\n",
+      "requested_at": 726.439622198,
+      "chunks": [
+        {
+          "delay_s": 0.014030566999963412,
+          "text": "listener estimator_aid_src_ev_pos -i 0 -n 1\n\nTOPIC: estimator_aid_src_"
+        },
+        {
+          "delay_s": 0.026023415999929966,
+          "text": "ev_pos instance 0 #1\n estimator_aid_src_ev_pos\n    timestamp: 34808858"
+        },
+        {
+          "delay_s": 0.026023415999929966,
+          "text": "4 (0.008085 seconds ago)\n    timestamp_sample: 347986050 (102534 us be"
+        },
+        {
+          "delay_s": 0.026023415999929966,
+          "text": "fore timestamp)\n    time_last_fuse: 347987414\n    device_id: 0 (Type: "
+        },
+        {
+          "delay_s": 0.03369068399990738,
+          "text": "0x00, UNKNOWN:0 (0x00))\n    observation: [0.09317, -0.20202]\n    obser"
+        },
+        {
+          "delay_s": 0.03369068399990738,
+          "text": "vation_variance: [0.01000, 0.01000]\n    innovation: [0.00015, 0.00001]"
+        },
+        {
+          "delay_s": 0.03369068399990738,
+          "text": "\n    innovation_variance: [0.01105, 0.01105]\n    test_ratio: [0.00000,"
+        },
+        {
+          "delay_s": 0.03369068399990738,
+          "text": " 0.00000]\n    estimator_instance: 0\n    fusion_enabled: True\n    innov"
+        },
+        {
+          "delay_s": 0.04962064799997279,
+          "text": "ation_rejected: False\n    fused: True\nnsh> \u001b[K"
+        }
+      ]
+    },
+    {
+      "command": "listener estimator_aid_src_ev_hgt -i 0 -n 1\n",
+      "requested_at": 711.466656109,
+      "chunks": [
+        {
+          "delay_s": 0.013979325999912362,
+          "text": "listener estimator_aid_src_ev_hgt -i 0 -n 1\n\nTOPIC: estimator_aid_src_"
+        },
+        {
+          "delay_s": 0.01894687999993039,
+          "text": "ev_hgt instance 0 #1\n estimator_aid_src_ev_hgt\n    timestamp: 33309935"
+        },
+        {
+          "delay_s": 0.01894687999993039,
+          "text": "7 (0.029836 seconds ago)\n    timestamp_sample: 332987553 (111804 us be"
+        },
+        {
+          "delay_s": 0.01894687999993039,
+          "text": "fore timestamp)\n    time_last_fuse: 332995191\n    device_id: 0 (Type: "
+        },
+        {
+          "delay_s": 0.02869249899993065,
+          "text": "0x00, UNKNOWN:0 (0x00))\n    observation: -0.03321\n    observation_vari"
+        },
+        {
+          "delay_s": 0.02869249899993065,
+          "text": "ance: 0.01000\n    innovation: 0.00003\n    innovation_variance: 0.01100"
+        },
+        {
+          "delay_s": 0.0392551850000018,
+          "text": "\n    test_ratio: 0.00000\n    estimator_instance: 0\n    fusion_enabled:"
+        },
+        {
+          "delay_s": 0.0392551850000018,
+          "text": " True\n    innovation_rejected: False\n    fused: True\n\nnsh> \u001b[K"
+        }
+      ]
+    },
+    {
+      "command": "listener estimator_aid_src_ev_yaw -i 0 -n 1\n",
+      "requested_at": 711.508625075,
+      "chunks": [
+        {
+          "delay_s": 0.017167029999995975,
+          "text": "listener estimator_aid_src_ev_yaw -i 0 -n 1\n\nTOPIC: estimator_aid_src_"
+        },
+        {
+          "delay_s": 0.017167029999995975,
+          "text": "ev_yaw instance 0 #1\n estimator_aid_src_ev_yaw\n    timestamp: 33314886"
+        },
+        {
+          "delay_s": 0.017167029999995975,
+          "text": "0 (0.022272 seconds ago)\n    timestamp_sample: 333038145 (110715 us be"
+        },
+        {
+          "delay_s": 0.027334724999946047,
+          "text": "fore timestamp)\n    time_last_fuse: 333044725\n    device_id: 0 (Type: "
+        },
+        {
+          "delay_s": 0.027334724999946047,
+          "text": "0x00, UNKNOWN:0 (0x00))\n    observation: 0.00289\n    observation_varia"
+        },
+        {
+          "delay_s": 0.027334724999946047,
+          "text": "nce: 0.10000\n    innovation: -0.00091\n    innovation_variance: 0.10028"
+        },
+        {
+          "delay_s": 0.027334724999946047,
+          "text": "\n    test_ratio: 0.00000\n    estimator_instance: 0\n    fusion_enabled:"
+        },
+        {
+          "delay_s": 0.03837112599990178,
+          "text": " True\n    innovation_rejected: False\n    fused: True\n\nnsh> \u001b[K"
+        }
+      ]
+    },
+    {
+      "command": "listener vehicle_visual_odometry -n 1\n",
+      "requested_at": 711.549500693,
+      "chunks": [
+        {
+          "delay_s": 0.014415041999995992,
+          "text": "listener vehicle_visual_odometry -n 1\n"
+        },
+        {
+          "delay_s": 0.014415041999995992,
+          "text": "\nTOPIC: vehicle_visual_odometry\n vehicle_visual_odometry\n    timestamp"
+        },
+        {
+          "delay_s": 0.024657669000021087,
+          "text": ": 333196198 (0.018892 seconds ago)\n    timestamp_sample: 333196196 (2 "
+        },
+        {
+          "delay_s": 0.024657669000021087,
+          "text": "us before timestamp)\n    position: [0.09321, -0.20192, -0.03321]\n    q"
+        },
+        {
+          "delay_s": 0.024657669000021087,
+          "text": ": [0.99999, 0.00011, 0.00044, 0.00154] (Roll: 0.0 deg, Pitch: 0.1 deg,"
+        },
+        {
+          "delay_s": 0.024657669000021087,
+          "text": " Yaw: 0.1 deg)\n    velocity: [nan, nan, nan]\n    angular_velocity: [na"
+        },
+        {
+          "delay_s": 0.03467175100001896,
+          "text": "n, nan, nan]\n    position_variance: [0.00040, 0.00040, 0.00040]\n    or"
+        },
+        {
+          "delay_s": 0.03467175100001896,
+          "text": "ientation_variance: [0.01000, 0.01000, 0.01000]\n    velocity_variance:"
+        },
+        {
+          "delay_s": 0.03467175100001896,
+          "text": " [nan, nan, nan]\n    pose_frame: 1\n    velocity_frame: 0\n    reset_cou"
+        },
+        {
+          "delay_s": 0.044584843999928125,
+          "text": "nter: 0\n    quality: 0\n\nnsh> \u001b[K"
+        }
+      ]
+    },
+    {
+      "command": "listener vehicle_local_position -n 1\n",
+      "requested_at": 726.637154244,
+      "chunks": [
+        {
+          "delay_s": 0.00851348899993809,
+          "text": "listener vehicle_local_position -n 1\n"
+        },
+        {
+          "delay_s": 0.01660319299992352,
+          "text": "\nTOPIC: vehicle_local_position\n vehicle_local_position\n    timestamp: "
+        },
+        {
+          "delay_s": 0.01660319299992352,
+          "text": "348277529 (0.009814 seconds ago)\n    timestamp_sample: 348277112 (417 "
+        },
+        {
+          "delay_s": 0.01660319299992352,
+          "text": "us before timestamp)\n    ref_timestamp: 0\n    ref_lat: nan\n    ref_lon"
+        },
+        {
+          "delay_s": 0.02627620799989927,
+          "text": ": nan\n    x: 0.09372\n    y: -0.20345\n    z: -0.03492\n    delta_xy: [0."
+        },
+        {
+          "delay_s": 0.02627620799989927,
+          "text": "09261, -0.20152]\n    delta_z: -0.03320\n    vx: 0.00098\n    vy: -0.0019"
+        },
+        {
+          "delay_s": 0.02627620799989927,
+          "text": "8\n    vz: -0.00247\n    z_deriv: -0.00050\n    delta_vxy: [-0.00000, -0."
+        },
+        {
+          "delay_s": 0.047001106999914555,
+          "text": "00001]\n    delta_vz: 0.00031\n    ax: -0.00712\n    ay: 0.01463\n    az: "
+        },
+        {
+          "delay_s": 0.047001106999914555,
+          "text": "-0.03894\n    heading: 0.00314\n    delta_heading: 0.00101\n    ref_alt: "
+        },
+        {
+          "delay_s": 0.056787676999988435,
+          "text": "nan\n    dist_bottom: 0.10068\n    eph: 0.04508\n    epv: 0.03096\n    evh"
+        },
+        {
+          "delay_s": 0.056787676999988435,
+          "text": ": 0.06378\n    evv: 0.04174\n    vxy_max: inf\n    vz_max: inf\n    hagl_m"
+        },
+        {
+          "delay_s": 0.056787676999988435,
+          "text": "in: inf\n    hagl_max: inf\n    xy_valid: True\n    z_valid: True\n    v_x"
+        },
+        {
+          "delay_s": 0.056787676999988435,
+          "text": "y_valid: True\n    v_z_valid: True\n    xy_reset_counter: 2\n    z_reset_"
+        },
+        {
+          "delay_s": 0.056787676999988435,
+          "text": "counter: 2\n    vxy_reset_counter: 1\n    vz_reset_counter: 1\n    headin"
+        },
+        {
+          "delay_s": 0.06712658799995097,
+          "text": "g_reset_counter: 1\n    heading_good_for_control: True\n    xy_global: F"
+        },
+        {
+          "delay_s": 0.06712658799995097,
+          "text": "alse\n    z_global: False\n    dist_bottom_valid: False\n    dist_bottom_"
+        },
+        {
+          "delay_s": 0.06712658799995097,
+          "text": "sensor_bitfield: 0\n    dead_reckoning: False\n\nnsh> \u001b[K"
+        }
+      ]
+    },
+    {
+      "command": "listener failsafe_flags -n 1\n",
+      "requested_at": 726.707700379,
+      "chunks": [
+        {
+          "delay_s": 0.01699076599993532,
+          "text": "listener failsafe_flags -n 1\n\nTOPIC: failsafe_flags\n failsafe_flags\n  "
+        },
+        {
+          "delay_s": 0.01699076599993532,
+          "text": "  timestamp: 348103875 (0.254218 seconds ago)\n    mode_req_angular_vel"
+        },
+        {
+          "delay_s": 0.01699076599993532,
+          "text": "ocity: 8311870\n    mode_req_attitude: 8310846\n    mode_req_local_alt: "
+        },
+        {
+          "delay_s": 0.02697570700001961,
+          "text": "8261694\n    mode_req_local_position: 8257592\n    mode_req_local_positi"
+        },
+        {
+          "delay_s": 0.02697570700001961,
+          "text": "on_relaxed: 4\n    mode_req_global_position: 56\n    mode_req_mission: 8"
+        },
+        {
+          "delay_s": 0.02697570700001961,
+          "text": "\n    mode_req_offboard_signal: 16384\n    mode_req_home_position: 32\n  "
+        },
+        {
+          "delay_s": 0.02697570700001961,
+          "text": "  mode_req_wind_and_flight_time_compliance: 2621464\n    mode_req_preve"
+        },
+        {
+          "delay_s": 0.03800175100002434,
+          "text": "nt_arming: 3944480\n    mode_req_manual_control: 33799\n    mode_req_oth"
+        },
+        {
+          "delay_s": 0.03800175100002434,
+          "text": "er: 0\n    angular_velocity_invalid: False\n    attitude_invalid: False\n"
+        },
+        {
+          "delay_s": 0.03800175100002434,
+          "text": "    local_altitude_invalid: False\n    local_position_invalid: False\n  "
+        },
+        {
+          "delay_s": 0.04610348400001385,
+          "text": "  local_position_invalid_relaxed: False\n    local_velocity_invalid: Fa"
+        },
+        {
+          "delay_s": 0.04610348400001385,
+          "text": "lse\n    global_position_invalid: True\n    auto_mission_missing: True\n "
+        },
+        {
+          "delay_s": 0.04610348400001385,
+          "text": "   offboard_control_signal_lost: True\n    home_position_invalid: True\n"
+        },
+        {
+          "delay_s": 0.05565476399999625,
+          "text": "    manual_control_signal_lost: False\n    gcs_connection_lost: False\n "
+        },
+        {
+          "delay_s": 0.05565476399999625,
+          "text": "   battery_warning: 0\n    battery_low_remaining_time: False\n    batter"
+        },
+        {
+          "delay_s": 0.05565476399999625,
+          "text": "y_unhealthy: False\n    primary_geofence_breached: False\n    mission_fa"
+        },
+        {
+          "delay_s": 0.06588667799996983,
+          "text": "ilure: False\n    vtol_fixed_wing_system_failure: False\n    wind_limit_"
+        },
+        {
+          "delay_s": 0.06588667799996983,
+          "text": "exceeded: False\n    flight_time_limit_exceeded: False\n    local_positi"
+        },
+        {
+          "delay_s": 0.06588667799996983,
+          "text": "on_accuracy_low: False\n    fd_critical_failure: False\n    fd_esc_armin"
+        },
+        {
+          "delay_s": 0.06588667799996983,
+          "text": "g_failure: False\n    fd_imbalanced_prop: False\n    fd_motor_failure: F"
+        },
+        {
+          "delay_s": 0.0796606139999767,
+          "text": "alse\n\nnsh> \u001b[K"
+        }
+      ]
+    },
+    {
+      "command": "listener vehicle_status -n 1\n",
+      "requested_at": 686.791263539,
+      "chunks": [
+        {
+          "delay_s": 0.015013415999987956,
+          "text": "listener vehicle_status -n 1\n"
+        },
+        {
+          "delay_s": 0.025550681999902736,
+          "text": "\nTOPIC: vehicle_status\n vehicle_status\n    timestamp: 308168706 (0.309"
+        },
+        {
+          "delay_s": 0.025550681999902736,
+          "text": "730 seconds ago)\n    armed_time: 0\n    takeoff_time: 0\n    nav_state_t"
+        },
+        {
+          "delay_s": 0.025550681999902736,
+          "text": "imestamp: 1483723\n    failure_detector_status: 0\n    arming_state: 1\n "
+        },
+        {
+          "delay_s": 0.035253944999908526,
+          "text": "   latest_arming_reason: 0\n    latest_disarming_reason: 0\n    nav_stat"
+        },
+        {
+          "delay_s": 0.035253944999908526,
+          "text": "e_user_intention: 2\n    nav_state: 2\n    hil_state: 0\n    vehicle_type"
+        },
+        {
+          "delay_s": 0.035253944999908526,
+          "text": ": 1\n    failsafe: False\n    failsafe_and_user_took_over: False\n    gcs"
+        },
+        {
+          "delay_s": 0.0447205909999866,
+          "text": "_connection_lost: False\n    gcs_connection_lost_counter: 0\n    high_la"
+        },
+        {
+          "delay_s": 0.0447205909999866,
+          "text": "tency_data_link_lost: False\n    is_vtol: False\n    is_vtol_tailsitter:"
+        },
+        {
+          "delay_s": 0.0447205909999866,
+          "text": " False\n    in_transition_mode: False\n    in_transition_to_fw: False\n  "
+        },
+        {
+          "delay_s": 0.05470692299991242,
+          "text": "  system_type: 2\n    system_id: 1\n    component_id: 1\n    safety_butto"
+        },
+        {
+          "delay_s": 0.05470692299991242,
+          "text": "n_available: True\n    safety_off: True\n    power_input_valid: True\n   "
+        },
+        {
+          "delay_s": 0.05470692299991242,
+          "text": " usb_connected: False\n    open_drone_id_system_present: False\n    open"
+        },
+        {
+          "delay_s": 0.06305130399994141,
+          "text": "_drone_id_system_healthy: False\n    parachute_system_present: False\n  "
+        },
+        {
+          "delay_s": 0.06305130399994141,
+          "text": "  parachute_system_healthy: False\n    avoidance_system_required: False"
+        },
+        {
+          "delay_s": 0.06305130399994141,
+          "text": "\n    avoidance_system_valid: False\n    rc_calibration_in_progress: Fal"
+        },
+        {
+          "delay_s": 0.06305130399994141,
+          "text": "se\n    calibration_enabled: False\n    pre_flight_checks_pass: True\n\nns"
+        },
+        {
+          "delay_s": 0.07502480199991624,
+          "text": "h> \u001b[K"
+        }
+      ]
+    }
+  ],
+  "failure_source": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/fixed_point_ground_20261109_094704/diagnosis.json",
+  "failure_source_sha256": "f43ee0562c75fe8bb8ec47c0238a89ff2e8694b43832fc065939a9c3dfe977e4",
+  "failure_native": {
+    "native_input_observed": false,
+    "reasons": [
+      "fc_manual_control_loss_or_unknown"
+    ],
+    "topic_timing": {
+      "input_rc": {
+        "host_age_s": 0.3217133509999712,
+        "source_age_upper_s": 0.35164054300010206,
+        "source_limit_s": 0.5,
+        "query_headroom_s": 0.14835945699989794,
+        "problems": []
+      },
+      "manual_control_setpoint": {
+        "host_age_s": 0.1701219190001666,
+        "source_age_upper_s": 0.287608543000102,
+        "source_limit_s": 0.5,
+        "query_headroom_s": 0.21239145699989798,
+        "problems": []
+      },
+      "manual_control_switches": {
+        "host_age_s": 0.19960779200005163,
+        "source_age_upper_s": 0.963527543000102,
+        "source_limit_s": 1.5,
+        "query_headroom_s": 0.30039220799994837,
+        "problems": []
+      },
+      "actuator_armed": {
+        "host_age_s": 0.39010976300005495,
+        "source_age_upper_s": 0.7116495430001021,
+        "source_limit_s": 1.0,
+        "query_headroom_s": 0.10989023699994505,
+        "problems": []
+      },
+      "failsafe_flags": {
+        "host_age_s": 0.5012669290001668,
+        "source_age_upper_s": 0.667468543000102,
+        "source_limit_s": 1.0,
+        "query_headroom_s": -Infinity,
+        "problems": [
+          "reply_stale_or_future"
+        ]
+      }
+    },
+    "sticks_ready": true,
+    "sticks_moving": false,
+    "input_rc": {
+      "timestamp": 158678735,
+      "timestamp_last_signal": 158678735,
+      "input_source": 9,
+      "channel_count": 18,
+      "rssi": 255,
+      "rc_lost": false,
+      "rc_failsafe": false
+    },
+    "selected_manual_input": {
+      "timestamp": 158742767,
+      "timestamp_sample": 158742735,
+      "data_source": 1,
+      "valid": true,
+      "sticks_moving": false,
+      "roll": 0.0,
+      "pitch": 0.0,
+      "yaw": 0.0,
+      "throttle": -1.0
+    },
+    "switches": {
+      "timestamp": 158066848,
+      "timestamp_sample": 158058736,
+      "mode_slot": 6,
+      "arm_switch": 3,
+      "offboard_switch": 0,
+      "kill_switch": 3
+    },
+    "kill_requested": false,
+    "output_lock_confirmed": false,
+    "stop_active": false,
+    "actuator": {
+      "timestamp": 158318726,
+      "armed": false,
+      "manual_lockdown": false,
+      "lockdown": false,
+      "force_failsafe": false
+    },
+    "actual_flight_mode": null,
+    "channels": {
+      "received_at": 4.015765271999953,
+      "time_boot_ms": 158910,
+      "channel_count": 18,
+      "values": [
+        1500,
+        1494,
+        990,
+        1494,
+        2006,
+        982,
+        982,
+        982,
+        982,
+        1006,
+        1494,
+        1994,
+        1494,
+        1494,
+        1494,
+        1494,
+        998,
+        998
+      ],
+      "rssi": null,
+      "source_identity_proven": false
+    },
+    "channels_fresh": true,
+    "mode_changes": [],
+    "raw_snapshots": {
+      "actuator_armed": {
+        "received_at": 3.7250794950000454,
+        "value": {
+          "timestamp": 158318726,
+          "armed": false,
+          "manual_lockdown": false,
+          "lockdown": false,
+          "force_failsafe": false
+        }
+      },
+      "failsafe_flags": {
+        "received_at": 3.6139223289999336,
+        "value": {
+          "timestamp": 158362907,
+          "manual_control_signal_lost": false
+        }
+      },
+      "input_rc": {
+        "received_at": 3.793475907000129,
+        "value": {
+          "timestamp": 158678735,
+          "timestamp_last_signal": 158678735,
+          "input_source": 9,
+          "channel_count": 18,
+          "rssi": 255,
+          "rc_lost": false,
+          "rc_failsafe": false
+        }
+      },
+      "manual_control_setpoint": {
+        "received_at": 3.945067338999934,
+        "value": {
+          "timestamp": 158742767,
+          "timestamp_sample": 158742735,
+          "data_source": 1,
+          "valid": true,
+          "sticks_moving": false,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "throttle": -1.0
+        }
+      },
+      "manual_control_switches": {
+        "received_at": 3.9155814660000487,
+        "value": {
+          "timestamp": 158066848,
+          "timestamp_sample": 158058736,
+          "mode_slot": 6,
+          "arm_switch": 3,
+          "offboard_switch": 0,
+          "kill_switch": 3
+        }
+      }
+    },
+    "flight_authorized": false,
+    "airborne_takeover_verified": false,
+    "receiver_loss_response_verified": false
+  },
+  "failure_context": {
+    "now": 4.1151892580001,
+    "boot_session": "4d3aa64179f646ba837ad13645e595a1",
+    "rigid_revision": "MircoAir-rebuilt-20261030-revision01",
+    "boot_ms": 159010,
+    "uid2": "000600000000343434323533511500280022",
+    "firmware": "1.14.3",
+    "heartbeat_age": 0.7071541450000041,
+    "actuator_age": 0.39010976300005495,
+    "source_age": 0.0017784619999998696,
+    "attitude_age": 0.0,
+    "armed": false,
+    "landed": true,
+    "lockdown": false,
+    "gamepad_current": false,
+    "home_pressed": false,
+    "epoch_valid": true,
+    "ground_status_max_age": 0.5,
+    "pilot_source": "native_rc",
+    "native_rc_current": false,
+    "native_stop_clear": true,
+    "audit_key": "native_failsafe_flags",
+    "audit_requested_at": 4.043088656999998,
+    "landed_message_age": 0.11094805800007634,
+    "fusion_phase": "FUSING"
+  },
+  "recent_shapes": [
+    {
+      "command": "listener actuator_armed -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1966869010984,
+          "text": "listener actuator_armed -n 1\n\nTOPIC: actuator_armed\n actuator_armed\n  "
+        },
+        {
+          "at_ns": 1966880234684,
+          "text": "  timestamp: 156976800 (0.485397 seconds ago)\n    armed: False\n    pre"
+        },
+        {
+          "at_ns": 1966880234684,
+          "text": "armed: False\n    ready_to_arm: True\n    lockdown: False\n    manual_loc"
+        },
+        {
+          "at_ns": 1966880234684,
+          "text": "kdown: False\n    force_failsafe: False\n    in_esc_calibration_mode: Fa"
+        },
+        {
+          "at_ns": 1966892449944,
+          "text": "lse\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 23438960
+    },
+    {
+      "command": "listener failsafe_flags -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1967861399668,
+          "text": "listener failsafe_flags -n 1\n\nTOPIC: failsafe_flags\n failsafe_flags\n  "
+        },
+        {
+          "at_ns": 1967869277320,
+          "text": "  timestamp: 158362907 (0.087496 seconds ago)\n    mode_req_angular_vel"
+        },
+        {
+          "at_ns": 1967869277320,
+          "text": "ocity: 8311870\n    mode_req_attitude: 8310846\n    mode_req_local_alt: "
+        },
+        {
+          "at_ns": 1967869277320,
+          "text": "8261694\n    mode_req_local_position: 8257592\n    mode_req_local_positi"
+        },
+        {
+          "at_ns": 1967878898176,
+          "text": "on_relaxed: 4\n    mode_req_global_position: 56\n    mode_req_mission: 8"
+        },
+        {
+          "at_ns": 1967878898176,
+          "text": "\n    mode_req_offboard_signal: 16384\n    mode_req_home_position: 32\n  "
+        },
+        {
+          "at_ns": 1967878898176,
+          "text": "  mode_req_wind_and_flight_time_compliance: 2621464\n    mode_req_preve"
+        },
+        {
+          "at_ns": 1967898634179,
+          "text": "nt_arming: 3944480\n    mode_req_manual_control: 33799\n    mode_req_oth"
+        },
+        {
+          "at_ns": 1967898634179,
+          "text": "er: 0\n    angular_velocity_invalid: False\n    attitude_invalid: False\n"
+        },
+        {
+          "at_ns": 1967898634179,
+          "text": "    local_altitude_invalid: False\n    local_position_invalid: True\n   "
+        },
+        {
+          "at_ns": 1967898634179,
+          "text": " local_position_invalid_relaxed: True\n    local_velocity_invalid: True"
+        },
+        {
+          "at_ns": 1967898688450,
+          "text": "\n    global_position_invalid: True\n    auto_mission_missing: True\n    "
+        },
+        {
+          "at_ns": 1967898688450,
+          "text": "offboard_control_signal_lost: True\n    home_position_invalid: True\n   "
+        },
+        {
+          "at_ns": 1967898688450,
+          "text": " manual_control_signal_lost: False\n    gcs_connection_lost: False\n    "
+        },
+        {
+          "at_ns": 1967909654404,
+          "text": "battery_warning: 0\n    battery_low_remaining_time: False\n    battery_u"
+        },
+        {
+          "at_ns": 1967909654404,
+          "text": "nhealthy: False\n    primary_geofence_breached: False\n    mission_failu"
+        },
+        {
+          "at_ns": 1967909654404,
+          "text": "re: False\n    vtol_fixed_wing_system_failure: False\n    wind_limit_exc"
+        },
+        {
+          "at_ns": 1967925877111,
+          "text": "eeded: False\n    flight_time_limit_exceeded: False\n    local_position_"
+        },
+        {
+          "at_ns": 1967925877111,
+          "text": "accuracy_low: False\n    fd_critical_failure: False\n    fd_esc_arming_f"
+        },
+        {
+          "at_ns": 1967925877111,
+          "text": "ailure: False\n    fd_imbalanced_prop: False\n    fd_motor_failure: Fals"
+        },
+        {
+          "at_ns": 1967929864034,
+          "text": "e\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 68464366
+    },
+    {
+      "command": "listener input_rc -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1964851283905,
+          "text": "listener input_rc -n 1\n"
+        },
+        {
+          "at_ns": 1964860669920,
+          "text": "\nTOPIC: input_rc\n input_rc\n    timestamp: 155442736 (0.001588 seconds "
+        },
+        {
+          "at_ns": 1964860669920,
+          "text": "ago)\n    timestamp_last_signal: 155442736\n    rssi: 255\n    rssi_dbm: "
+        },
+        {
+          "at_ns": 1964860669920,
+          "text": "nan\n    rc_lost_frame_count: 0\n    rc_total_frame_count: 0\n    rc_ppm_"
+        },
+        {
+          "at_ns": 1964869715223,
+          "text": "frame_length: 0\n    values: [1500, 1494, 990, 1494, 2006, 982, 982, 98"
+        },
+        {
+          "at_ns": 1964869715223,
+          "text": "2, 982, 1006, 1494, 1994, 1494, 1494, 1494, 1494, 998, 998]\n    channe"
+        },
+        {
+          "at_ns": 1964869715223,
+          "text": "l_count: 18\n    rc_failsafe: False\n    rc_lost: False\n    input_source"
+        },
+        {
+          "at_ns": 1964878899342,
+          "text": ": 9\n    link_quality: -1\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 27615437
+    },
+    {
+      "command": "listener manual_control_setpoint -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1967669572054,
+          "text": "listener manual_control_setpoint -n 1\n\nTOPIC: manual_control_setpoint\n"
+        },
+        {
+          "at_ns": 1967681029501,
+          "text": " manual_control_setpoint\n    timestamp: 158187249 (0.073749 seconds ag"
+        },
+        {
+          "at_ns": 1967681029501,
+          "text": "o)\n    timestamp_sample: 158187215 (34 us before timestamp)\n    roll: "
+        },
+        {
+          "at_ns": 1967681029501,
+          "text": "0.00000\n    pitch: 0.00000\n    yaw: 0.00000\n    throttle: -1.00000\n   "
+        },
+        {
+          "at_ns": 1967692326537,
+          "text": " flaps: 0.00000\n    aux1: 0.00000\n    aux2: 0.00000\n    aux3: 0.00000\n"
+        },
+        {
+          "at_ns": 1967692326537,
+          "text": "    aux4: 0.00000\n    aux5: 0.00000\n    aux6: 0.00000\n    valid: True\n"
+        },
+        {
+          "at_ns": 1967692326537,
+          "text": "    data_source: 1\n    sticks_moving: False\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 22754483
+    },
+    {
+      "command": "listener manual_control_switches -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1964930897483,
+          "text": "listener manual_control_switches -n 1\n\nTOPIC: manual_control_switches\n"
+        },
+        {
+          "at_ns": 1964930897483,
+          "text": " manual_control_switches\n    timestamp: 155058761 (0.458527 seconds ag"
+        },
+        {
+          "at_ns": 1964930897483,
+          "text": "o)\n    timestamp_sample: 155050736 (8025 us before timestamp)\n    swit"
+        },
+        {
+          "at_ns": 1964977987906,
+          "text": "ch_changes: 1\n    mode_slot: 6\n    arm_switch: 3\n    return_switch: 0\n"
+        },
+        {
+          "at_ns": 1964977987906,
+          "text": "    loiter_switch: 0\n    offboard_switch: 0\n    kill_switch: 3\n    gea"
+        },
+        {
+          "at_ns": 1964977987906,
+          "text": "r_switch: 0\n    transition_switch: 0\n    photo_switch: 0\n    video_swi"
+        },
+        {
+          "at_ns": 1964984800294,
+          "text": "tch: 0\n    engage_main_motor_switch: 0\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 53902811
+    },
+    {
+      "command": "listener vehicle_visual_odometry -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1966999730108,
+          "text": "listener vehicle_visual_odometry -n 1\n\nTOPIC: vehicle_visual_odometry\n"
+        },
+        {
+          "at_ns": 1967011089441,
+          "text": " vehicle_visual_odometry\n    timestamp: 157567504 (0.025548 seconds ag"
+        },
+        {
+          "at_ns": 1967011089441,
+          "text": "o)\n    timestamp_sample: 157567502 (2 us before timestamp)\n    positio"
+        },
+        {
+          "at_ns": 1967011089441,
+          "text": "n: [0.76342, -0.84027, -0.01668]\n    q: [0.99980, -0.00901, -0.01773, "
+        },
+        {
+          "at_ns": 1967019295796,
+          "text": "0.00014] (Roll: -1.0 deg, Pitch: -2.0 deg, Yaw: 0.0 deg)\n    velocity:"
+        },
+        {
+          "at_ns": 1967019295796,
+          "text": " [nan, nan, nan]\n    angular_velocity: [nan, nan, nan]\n    position_va"
+        },
+        {
+          "at_ns": 1967019295796,
+          "text": "riance: [0.00040, 0.00040, 0.00040]\n    orientation_variance: [0.01000"
+        },
+        {
+          "at_ns": 1967032386508,
+          "text": ", 0.01000, 0.01000]\n    velocity_variance: [nan, nan, nan]\n    pose_fr"
+        },
+        {
+          "at_ns": 1967032386508,
+          "text": "ame: 1\n    velocity_frame: 0\n    reset_counter: 0\n    quality: 0\n\nnsh>"
+        },
+        {
+          "at_ns": 1967032386508,
+          "text": " \u001b[K"
+        }
+      ],
+      "span_ns": 32656400
+    },
+    {
+      "command": "listener estimator_selector_status -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1967609671141,
+          "text": "listener estimator_selector_status -n 1\n\nTOPIC: estimator_selector_sta"
+        },
+        {
+          "at_ns": 1967609671141,
+          "text": "tus\n estimator_selector_status\n    timestamp: 157316577 (0.878466 seco"
+        },
+        {
+          "at_ns": 1967609671141,
+          "text": "nds ago)\n    last_instance_change: 243901\n    instance_changed_count: "
+        },
+        {
+          "at_ns": 1967623776093,
+          "text": "1\n    accel_device_id: 6946834 (Type: 0x6A, SPI:2 (0x00))\n    baro_dev"
+        },
+        {
+          "at_ns": 1967623776093,
+          "text": "ice_id: 5207825 (Type: 0x4F, I2C:2 (0x77))\n    gyro_device_id: 6684690"
+        },
+        {
+          "at_ns": 1967623776093,
+          "text": " (Type: 0x66, SPI:2 (0x00))\n    mag_device_id: 0 (Type: 0x00, UNKNOWN:"
+        },
+        {
+          "at_ns": 1967631058598,
+          "text": "0 (0x00))\n    combined_test_ratio: [1.00000, 1.00000, nan, nan, nan, n"
+        },
+        {
+          "at_ns": 1967631058598,
+          "text": "an, nan, nan, nan]\n    relative_test_ratio: [0.00000, 0.00000, nan, na"
+        },
+        {
+          "at_ns": 1967631058598,
+          "text": "n, nan, nan, nan, nan, nan]\n    accumulated_gyro_error: [0.00000, 0.00"
+        },
+        {
+          "at_ns": 1967640381243,
+          "text": "000, nan, nan]\n    accumulated_accel_error: [0.00000, 0.00000, nan, na"
+        },
+        {
+          "at_ns": 1967640381243,
+          "text": "n]\n    primary_instance: 0\n    instances_available: 2\n    healthy: [Tr"
+        },
+        {
+          "at_ns": 1967640381243,
+          "text": "ue, True, False, False, False, False, False, False, False]\n    gyro_fa"
+        },
+        {
+          "at_ns": 1967655759879,
+          "text": "ult_detected: False\n    accel_fault_detected: False\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 46088738
+    },
+    {
+      "command": "listener estimator_aid_src_ev_pos -i 0 -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1967750467648,
+          "text": "listener estimator_aid_src_ev_pos -i 0 -n 1\n\nTOPIC: estimator_aid_src_"
+        },
+        {
+          "at_ns": 1967750467648,
+          "text": "ev_pos instance 0 #1\n estimator_aid_src_ev_pos\n    timestamp: 15832083"
+        },
+        {
+          "at_ns": 1967750467648,
+          "text": "6 (0.013241 seconds ago)\n    timestamp_sample: 158216087 (104749 us be"
+        },
+        {
+          "at_ns": 1967762475864,
+          "text": "fore timestamp)\n    time_last_fuse: 158216684\n    device_id: 0 (Type: "
+        },
+        {
+          "at_ns": 1967762475864,
+          "text": "0x00, UNKNOWN:0 (0x00))\n    observation: [0.76348, -0.83996]\n    obser"
+        },
+        {
+          "at_ns": 1967762475864,
+          "text": "vation_variance: [0.01000, 0.01000]\n    innovation: [-0.00032, 0.00065"
+        },
+        {
+          "at_ns": 1967771100314,
+          "text": "]\n    innovation_variance: [0.01099, 0.01099]\n    test_ratio: [0.00000"
+        },
+        {
+          "at_ns": 1967771100314,
+          "text": ", 0.00000]\n    estimator_instance: 0\n    fusion_enabled: True\n    inno"
+        },
+        {
+          "at_ns": 1967771100314,
+          "text": "vation_rejected: False\n    fused: True\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 20632666
+    },
+    {
+      "command": "listener estimator_aid_src_ev_pos -i 1 -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1967831261550,
+          "text": "listener estimator_aid_src_ev_pos -i 1 -n 1\n\nTOPIC: estimator_aid_src_"
+        },
+        {
+          "at_ns": 1967831261550,
+          "text": "ev_pos instance 1 #1\n estimator_aid_src_ev_pos\n    timestamp: 15841512"
+        },
+        {
+          "at_ns": 1967831261550,
+          "text": "7 (0.000467 seconds ago)\n    timestamp_sample: 158311873 (103254 us be"
+        },
+        {
+          "at_ns": 1967841605957,
+          "text": "fore timestamp)\n    time_last_fuse: 158312544\n    device_id: 0 (Type: "
+        },
+        {
+          "at_ns": 1967841605957,
+          "text": "0x00, UNKNOWN:0 (0x00))\n    observation: [0.76345, -0.84002]\n    obser"
+        },
+        {
+          "at_ns": 1967841605957,
+          "text": "vation_variance: [0.01000, 0.01000]\n    innovation: [-0.00007, -0.0004"
+        },
+        {
+          "at_ns": 1967849588486,
+          "text": "5]\n    innovation_variance: [0.01125, 0.01125]\n    test_ratio: [0.0000"
+        },
+        {
+          "at_ns": 1967849588486,
+          "text": "0, 0.00000]\n    estimator_instance: 1\n    fusion_enabled: True\n    inn"
+        },
+        {
+          "at_ns": 1967849588486,
+          "text": "ovation_rejected: False\n    fused: True\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 18326936
+    },
+    {
+      "command": "listener estimator_aid_src_ev_hgt -i 0 -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1967951027625,
+          "text": "listener estimator_aid_src_ev_hgt -i 0 -n 1\n\nTOPIC: estimator_aid_src_"
+        },
+        {
+          "at_ns": 1967951027625,
+          "text": "ev_hgt instance 0 #1\n estimator_aid_src_ev_hgt\n    timestamp: 15851302"
+        },
+        {
+          "at_ns": 1967958796725,
+          "text": "9 (0.024231 seconds ago)\n    timestamp_sample: 158403640 (109389 us be"
+        },
+        {
+          "at_ns": 1967958796725,
+          "text": "fore timestamp)\n    time_last_fuse: 158405837\n    device_id: 0 (Type: "
+        },
+        {
+          "at_ns": 1967958796725,
+          "text": "0x00, UNKNOWN:0 (0x00))\n    observation: -0.01669\n    observation_vari"
+        },
+        {
+          "at_ns": 1967958796725,
+          "text": "ance: 0.01000\n    innovation: 0.00006\n    innovation_variance: 0.01087"
+        },
+        {
+          "at_ns": 1967972394661,
+          "text": "\n    test_ratio: 0.00000\n    estimator_instance: 0\n    fusion_enabled:"
+        },
+        {
+          "at_ns": 1967972394661,
+          "text": " True\n    innovation_rejected: False\n    fused: True\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 21367036
+    },
+    {
+      "command": "listener estimator_aid_src_ev_hgt -i 1 -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1968053064744,
+          "text": "listener estimator_aid_src_ev_hgt -i 1 -n 1\n\nTOPIC: estimator_aid_src_"
+        },
+        {
+          "at_ns": 1968062710764,
+          "text": "ev_hgt instance 1 #1\n estimator_aid_src_ev_hgt\n    timestamp: 15863507"
+        },
+        {
+          "at_ns": 1968062710764,
+          "text": "8 (0.006961 seconds ago)\n    timestamp_sample: 158527991 (107087 us be"
+        },
+        {
+          "at_ns": 1968062710764,
+          "text": "fore timestamp)\n    time_last_fuse: 158533626\n    device_id: 0 (Type: "
+        },
+        {
+          "at_ns": 1968071534572,
+          "text": "0x00, UNKNOWN:0 (0x00))\n    observation: -0.01673\n    observation_vari"
+        },
+        {
+          "at_ns": 1968071534572,
+          "text": "ance: 0.01000\n    innovation: -0.00048\n    innovation_variance: 0.0108"
+        },
+        {
+          "at_ns": 1968071534572,
+          "text": "6\n    test_ratio: 0.00000\n    estimator_instance: 1\n    fusion_enabled"
+        },
+        {
+          "at_ns": 1968078787352,
+          "text": ": True\n    innovation_rejected: False\n    fused: True\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 25722608
+    },
+    {
+      "command": "listener estimator_aid_src_ev_yaw -i 0 -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1968123970906,
+          "text": "listener estimator_aid_src_ev_yaw -i 0 -n 1\n\nTOPIC: estimator_aid_src_"
+        },
+        {
+          "at_ns": 1968131735329,
+          "text": "ev_yaw instance 0 #1\n estimator_aid_src_ev_yaw\n    timestamp: 15869908"
+        },
+        {
+          "at_ns": 1968131735329,
+          "text": "7 (0.012867 seconds ago)\n    timestamp_sample: 158590203 (108884 us be"
+        },
+        {
+          "at_ns": 1968131735329,
+          "text": "fore timestamp)\n    time_last_fuse: 158597899\n    device_id: 0 (Type: "
+        },
+        {
+          "at_ns": 1968139809694,
+          "text": "0x00, UNKNOWN:0 (0x00))\n    observation: 0.00031\n    observation_varia"
+        },
+        {
+          "at_ns": 1968139809694,
+          "text": "nce: 0.10000\n    innovation: -0.00110\n    innovation_variance: 0.10244"
+        },
+        {
+          "at_ns": 1968139809694,
+          "text": "\n    test_ratio: 0.00000\n    estimator_instance: 0\n    fusion_enabled:"
+        },
+        {
+          "at_ns": 1968151904543,
+          "text": " True\n    innovation_rejected: False\n    fused: True\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 27933637
+    },
+    {
+      "command": "listener estimator_aid_src_ev_yaw -i 1 -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1968170792521,
+          "text": "listener estimator_aid_src_ev_yaw -i 1 -n 1\n\nTOPIC: estimator_aid_src_"
+        },
+        {
+          "at_ns": 1968182389116,
+          "text": "ev_yaw instance 1 #1\n estimator_aid_src_ev_yaw\n    timestamp: 15872505"
+        },
+        {
+          "at_ns": 1968182389116,
+          "text": "4 (0.034924 seconds ago)\n    timestamp_sample: 158620908 (104146 us be"
+        },
+        {
+          "at_ns": 1968182389116,
+          "text": "fore timestamp)\n    time_last_fuse: 158624294\n    device_id: 0 (Type: "
+        },
+        {
+          "at_ns": 1968182389116,
+          "text": "0x00, UNKNOWN:0 (0x00))\n    observation: 0.00049\n    observation_varia"
+        },
+        {
+          "at_ns": 1968193128838,
+          "text": "nce: 0.10000\n    innovation: -0.00137\n    innovation_variance: 0.10239"
+        },
+        {
+          "at_ns": 1968193128838,
+          "text": "\n    test_ratio: 0.00000\n    estimator_instance: 1\n    fusion_enabled:"
+        },
+        {
+          "at_ns": 1968193128838,
+          "text": " True\n    innovation_rejected: False\n    fused: True\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 22336317
+    },
+    {
+      "command": "listener estimator_status_flags -i 0 -n 1\n",
+      "chunks": [
+        {
+          "at_ns": 1968282810849,
+          "text": "listener estimator_status_flags -i 0 -n 1\n\nTOPIC: estimator_status_fla"
+        },
+        {
+          "at_ns": 1968282810849,
+          "text": "gs instance 0 #1\n estimator_status_flags\n    timestamp: 158707996 (0.1"
+        },
+        {
+          "at_ns": 1968282810849,
+          "text": "55905 seconds ago)\n    timestamp_sample: 158608451 (99545 us before ti"
+        },
+        {
+          "at_ns": 1968292065808,
+          "text": "mestamp)\n    control_status_changes: 4\n    fault_status_changes: 0\n   "
+        },
+        {
+          "at_ns": 1968292065808,
+          "text": " innovation_fault_status_changes: 0\n    cs_tilt_align: True\n    cs_yaw"
+        },
+        {
+          "at_ns": 1968292065808,
+          "text": "_align: True\n    cs_gps: False\n    cs_opt_flow: False\n    cs_mag_hdg: "
+        },
+        {
+          "at_ns": 1968292065808,
+          "text": "False\n    cs_mag_3d: False\n    cs_mag_dec: False\n    cs_in_air: False\n"
+        },
+        {
+          "at_ns": 1968300903049,
+          "text": "    cs_wind: False\n    cs_baro_hgt: False\n    cs_rng_hgt: False\n    cs"
+        },
+        {
+          "at_ns": 1968300903049,
+          "text": "_gps_hgt: False\n    cs_ev_pos: True\n    cs_ev_yaw: True\n    cs_ev_hgt:"
+        },
+        {
+          "at_ns": 1968300903049,
+          "text": " True\n    cs_fuse_beta: False\n    cs_mag_field_disturbed: False\n    cs"
+        },
+        {
+          "at_ns": 1968311564922,
+          "text": "_fixed_wing: False\n    cs_mag_fault: False\n    cs_fuse_aspd: False\n   "
+        },
+        {
+          "at_ns": 1968311564922,
+          "text": " cs_gnd_effect: False\n    cs_rng_stuck: False\n    cs_gps_yaw: False\n  "
+        },
+        {
+          "at_ns": 1968311564922,
+          "text": "  cs_mag_aligned_in_flight: False\n    cs_ev_vel: False\n    cs_syntheti"
+        },
+        {
+          "at_ns": 1968320185453,
+          "text": "c_mag_z: False\n    cs_vehicle_at_rest: True\n    cs_gps_yaw_fault: Fals"
+        },
+        {
+          "at_ns": 1968320185453,
+          "text": "e\n    cs_rng_fault: False\n    cs_inertial_dead_reckoning: False\n    cs"
+        },
+        {
+          "at_ns": 1968320185453,
+          "text": "_wind_dead_reckoning: False\n    cs_rng_kin_consistent: False\n    cs_fa"
+        },
+        {
+          "at_ns": 1968331710038,
+          "text": "ke_pos: False\n    cs_fake_hgt: False\n    cs_gravity_vector: False\n    "
+        },
+        {
+          "at_ns": 1968331710038,
+          "text": "fs_bad_mag_x: False\n    fs_bad_mag_y: False\n    fs_bad_mag_z: False\n  "
+        },
+        {
+          "at_ns": 1968331710038,
+          "text": "  fs_bad_hdg: False\n    fs_bad_mag_decl: False\n    fs_bad_airspeed: Fa"
+        },
+        {
+          "at_ns": 1968341862266,
+          "text": "lse\n    fs_bad_sideslip: False\n    fs_bad_optflow_x: False\n    fs_bad_"
+        },
+        {
+          "at_ns": 1968341862266,
+          "text": "optflow_y: False\n    fs_bad_vel_n: False\n    fs_bad_vel_e: False\n    f"
+        },
+        {
+          "at_ns": 1968341862266,
+          "text": "s_bad_vel_d: False\n    fs_bad_pos_n: False\n    fs_bad_pos_e: False\n   "
+        },
+        {
+          "at_ns": 1968341862266,
+          "text": " fs_bad_pos_d: False\n    fs_bad_acc_bias: False\n    fs_bad_acc_vertica"
+        },
+        {
+          "at_ns": 1968350854204,
+          "text": "l: False\n    fs_bad_acc_clipping: False\n    reject_hor_vel: False\n    "
+        },
+        {
+          "at_ns": 1968350854204,
+          "text": "reject_ver_vel: False\n    reject_hor_pos: False\n    reject_ver_pos: Fa"
+        },
+        {
+          "at_ns": 1968350854204,
+          "text": "lse\n    reject_yaw: False\n    reject_airspeed: False\n    reject_sidesl"
+        },
+        {
+          "at_ns": 1968359030122,
+          "text": "ip: False\n    reject_hagl: False\n    reject_optflow_x: False\n    rejec"
+        },
+        {
+          "at_ns": 1968359030122,
+          "text": "t_optflow_y: False\n\nnsh> \u001b[K"
+        }
+      ],
+      "span_ns": 76219273
+    }
+  ],
+  "current_run_shapes": {
+    "actuator_armed": {
+      "size": 384,
+      "delays": [
+        0.03979618199962977,
+        0.03979618199962977,
+        0.03985023099962977,
+        0.03985023099962977,
+        0.03985023099962977,
+        0.03986075299962977
+      ]
+    },
+    "input_rc": {
+      "size": 477,
+      "delays": [
+        3.492400010576824e-05,
+        0.011733347000105768,
+        0.021632330000105768,
+        0.021632330000105768,
+        0.021632330000105768,
+        0.030188893000105767,
+        0.030188893000105767,
+        0.030188893000105767,
+        0.04208108100010577
+      ]
+    },
+    "manual_control_setpoint": {
+      "size": 473,
+      "delays": [
+        0.01137531799986136,
+        0.03371226299986136,
+        0.03371226299986136,
+        0.03371226299986136,
+        0.03371226299986136,
+        0.04216000999986136,
+        0.04216000999986136,
+        0.04216000999986136
+      ]
+    },
+    "manual_control_switches": {
+      "size": 468,
+      "delays": [
+        0.0002750579994186819,
+        0.010171040999418682,
+        0.02084596699941868,
+        0.02084596699941868,
+        0.02084596699941868,
+        0.029702493999418683,
+        0.029702493999418683,
+        0.029702493999418683,
+        0.04110722799941868
+      ]
+    },
+    "failsafe_flags": {
+      "size": 1413,
+      "delays": [
+        0.032088860000026274,
+        0.032088860000026274,
+        0.032088860000026274,
+        0.04048248400002628,
+        0.04048248400002628,
+        0.04048248400002628,
+        0.04826431700002627,
+        0.059243330000026274,
+        0.059243330000026274,
+        0.059243330000026274,
+        0.059243330000026274,
+        0.059243330000026274,
+        0.07156821500002628,
+        0.07156821500002628,
+        0.07156821500002628,
+        0.07156821500002628,
+        0.07938297000002628,
+        0.07938297000002628,
+        0.07938297000002628,
+        0.07938297000002628,
+        0.09059698700002627
+      ]
+    },
+    "vehicle_visual_odometry": {
+      "size": 630,
+      "delays": [
+        0.027908047000143762,
+        0.027908047000143762,
+        0.027908047000143762,
+        0.041424653000143766,
+        0.041424653000143766,
+        0.041424653000143766,
+        0.041424653000143766,
+        0.04896962600014376,
+        0.04896962600014376
+      ]
+    },
+    "estimator_selector_status": {
+      "size": 902,
+      "delays": [
+        0.019807295000562324,
+        0.019807295000562324,
+        0.019807295000562324,
+        0.029540035000562324,
+        0.029540035000562324,
+        0.029540035000562324,
+        0.03777460200056232,
+        0.03777460200056232,
+        0.03777460200056232,
+        0.05000833800056233,
+        0.05000833800056233,
+        0.05000833800056233,
+        0.058342703000562324
+      ]
+    },
+    "estimator_aid_src_ev_pos": {
+      "size": 603,
+      "delays": [
+        0.02502950499952557,
+        0.02502950499952557,
+        0.02502950499952557,
+        0.02940154499952557,
+        0.02940154499952557,
+        0.02940154499952557,
+        0.02940154499952557,
+        0.04235964999952557,
+        0.04235964999952557
+      ]
+    },
+    "estimator_aid_src_ev_hgt": {
+      "size": 549,
+      "delays": [
+        0.022659845000351807,
+        0.022659845000351807,
+        0.022659845000351807,
+        0.027989437000351808,
+        0.027989437000351808,
+        0.027989437000351808,
+        0.027989437000351808,
+        0.04112803800035181,
+        0.04112803800035181
+      ]
+    },
+    "estimator_aid_src_ev_yaw": {
+      "size": 549,
+      "delays": [
+        0.020390129999773597,
+        0.030294160999773598,
+        0.030294160999773598,
+        0.030294160999773598,
+        0.030294160999773598,
+        0.030294160999773598,
+        0.0435539649997736,
+        0.0435539649997736
+      ]
+    },
+    "estimator_status_flags": {
+      "size": 1917,
+      "delays": [
+        0.021852842000423853,
+        0.021852842000423853,
+        0.03561181800042385,
+        0.03561181800042385,
+        0.03561181800042385,
+        0.03561181800042385,
+        0.039735485000423856,
+        0.039735485000423856,
+        0.039735485000423856,
+        0.05111429400042385,
+        0.05111429400042385,
+        0.05111429400042385,
+        0.06535601500042384,
+        0.06535601500042384,
+        0.06535601500042384,
+        0.07346734800042384,
+        0.07346734800042384,
+        0.07346734800042384,
+        0.08236975000042385,
+        0.08236975000042385,
+        0.08236975000042385,
+        0.08236975000042385,
+        0.09648991700042385,
+        0.09648991700042385,
+        0.09648991700042385,
+        0.10121432800042385,
+        0.10121432800042385,
+        0.10121432800042385
+      ]
+    },
+    "estimator_status": {
+      "size": 1330,
+      "delays": [
+        0.021952806999981506,
+        0.021952806999981506,
+        0.021952806999981506,
+        0.021952806999981506,
+        0.030001813999981506,
+        0.030001813999981506,
+        0.030001813999981506,
+        0.041653523999981505,
+        0.041653523999981505,
+        0.041653523999981505,
+        0.05158831599998151,
+        0.05158831599998151,
+        0.05158831599998151,
+        0.05158831599998151,
+        0.059685469999981505,
+        0.059685469999981505,
+        0.059685469999981505,
+        0.0719328029999815,
+        0.0719328029999815
+      ]
+    },
+    "vehicle_local_position": {
+      "size": 1139,
+      "delays": [
+        0.018743765000491963,
+        0.018743765000491963,
+        0.03045891900049196,
+        0.03045891900049196,
+        0.03045891900049196,
+        0.03045891900049196,
+        0.04057560300049196,
+        0.04057560300049196,
+        0.04057560300049196,
+        0.04884827800049196,
+        0.04884827800049196,
+        0.04884827800049196,
+        0.05686405900049196,
+        0.05686405900049196,
+        0.05686405900049196,
+        0.05686405900049196,
+        0.07160147900049196
+      ]
+    },
+    "vehicle_status": {
+      "size": 1156,
+      "delays": [
+        0.018686888000020184,
+        0.018686888000020184,
+        0.018686888000020184,
+        0.030575676000020185,
+        0.030575676000020185,
+        0.030575676000020185,
+        0.03915249700002019,
+        0.03915249700002019,
+        0.03915249700002019,
+        0.03915249700002019,
+        0.04877568900002018,
+        0.04877568900002018,
+        0.04877568900002018,
+        0.061224383000020186,
+        0.061224383000020186,
+        0.061224383000020186,
+        0.06941662600002019
+      ]
+    },
+    "critical_status": {
+      "size": 2286,
+      "delays": [
+        0.022923548999898388,
+        0.022923548999898388,
+        0.022923548999898388,
+        0.031196996999898387,
+        0.031196996999898387,
+        0.031196996999898387,
+        0.039795473999898384,
+        0.039795473999898384,
+        0.04809926799989839,
+        0.04809926799989839,
+        0.04809926799989839,
+        0.04809926799989839,
+        0.05994092799989839,
+        0.05994092799989839,
+        0.05994092799989839,
+        0.05994092799989839,
+        0.06799934899989839,
+        0.06799934899989839,
+        0.06799934899989839,
+        0.08151982399989839,
+        0.08151982399989839,
+        0.08151982399989839,
+        0.08883417199989839,
+        0.08883417199989839,
+        0.08883417199989839,
+        0.10079800199989838,
+        0.10079800199989838,
+        0.10079800199989838,
+        0.10976320199989839,
+        0.10976320199989839,
+        0.10976320199989839,
+        0.10976320199989839,
+        0.1234368129998984
+      ]
+    }
+  },
+  "current_run_source": {
+    "path": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/fixed_point_ground_20261109_102502",
+    "sha256": "3f709c5fcaca052f2bd2de83598633e2423fdf66bed187556d03093b000b1e56",
+    "scope": "Observed sizes and relative RX chunks; request overhead inferred using same-run per-family maximum duration, synthetic state contents in tests"
+  }
+}

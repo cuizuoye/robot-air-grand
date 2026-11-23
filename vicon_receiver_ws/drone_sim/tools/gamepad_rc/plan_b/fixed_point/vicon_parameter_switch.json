@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "status": "OFFLINE_UNAPPROVED",
+  "last_confirmed_readback": "/home/czy/vicon_receiver_ws/drone_sim/preparation_runs/flow_persistence_20261027_155416/readback.json",
+  "last_confirmed_sha256": "9a397b7d089841458891aaeaffac51450d76c72f0105c66e065891a1caf39a2f",
+  "current_device_readback": false,
+  "changes": [
+    {
+      "name": "EKF2_EV_CTRL",
+      "type": 6,
+      "old": 0,
+      "target": 11,
+      "reason": "Vicon XYZ 和航向；当前发送器没有 EV 速度观测，不启用 bit 2"
+    },
+    {
+      "name": "EKF2_HGT_REF",
+      "type": 6,
+      "old": 2,
+      "target": 3,
+      "reason": "以 Vicon 作为高度参考"
+    },
+    {
+      "name": "EKF2_RNG_CTRL",
+      "type": 6,
+      "old": 2,
+      "target": 0,
+      "reason": "保留测距数据，但不融合为本轮世界坐标高度"
+    },
+    {
+      "name": "EKF2_OF_CTRL",
+      "type": 6,
+      "old": 1,
+      "target": 0,
+      "reason": "首轮固定点使用单一 Vicon 主定位；光流保留观测，暂不融合"
+    }
+  ],
+  "rollback_order": [
+    "EKF2_RNG_CTRL",
+    "EKF2_HGT_REF",
+    "EKF2_EV_CTRL",
+    "EKF2_OF_CTRL"
+  ],
+  "retained": {
+    "EKF2_BARO_CTRL": 0,
+    "RC_MAP_OFFB_SW": 0,
+    "COM_RCL_EXCEPT": 0,
+    "COM_RC_OVERRIDE": 3,
+    "COM_RC_IN_MODE": 0
+  },
+  "calibration_not_guessed": [
+    "EKF2_EV_DELAY",
+    "EKF2_EV_POS_X",
+    "EKF2_EV_POS_Y",
+    "EKF2_EV_POS_Z"
+  ],
+  "requires_current_named_readback_before_writing": true,
+  "flight_authorized": false,
+  "actual_writes": 0,
+  "note": "仅候选差异，不是批准档。未来逐项比较，只写差异；原值若变化先停止。保存/重启与持久化读回另行执行。"
+}
